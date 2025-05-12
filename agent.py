@@ -23,13 +23,9 @@ llm = ChatGoogleGenerativeAI(
     temperature=0,
 )
 
-url = "https://fa-eply-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Careers/job/42000?utm_medium=jobshare%20and%20click%20the%20Apply"
+url = "https://careers.oceaneering.com/global/en/job/OCINGLOBAL29365"
 cmd = f"""
-Go to {url} and click Apply by:
-1. naviagte to page
-2. wait for page to load
-3. extract text
-4. use click tool with "text="
+Go to {url} and apply to the job using a generated user profile 
 """
 
 agent = create_react_agent(llm, tools, prompt)
