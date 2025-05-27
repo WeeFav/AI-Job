@@ -65,14 +65,14 @@ export const JobDesc = ({ setPage }) => {
                         </ul>
                     </section>
 
-                    <div
+                    <button
                         onClick={() => {
                             setPage('Profile')
                         }}
                         className={applyButtonClasses}
                     >
                         Apply Now
-                    </div>
+                    </button>
                 </main>
             </div>
         </div>

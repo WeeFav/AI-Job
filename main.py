@@ -43,7 +43,8 @@ async def main():
 
     langgraph_agent_executor = create_react_agent(model, tools)
 
-    url = "http://localhost:5173/"
+    # url = "http://localhost:5173/"
+    url = "https://stmicroelectronics.eightfold.ai/careers/job/563637158900324?domain=stmicroelectronics.com"
     query = f"""
     Navigate to {url} and determine if a job application form is immediately visible or hidden behind an 'Apply' button or link.
     If necessary, click the appropriate button to reveal the form.
@@ -64,7 +65,7 @@ async def main():
     - Cover Letter → "I am excited to apply for this position..."
     - Expected Salary → 85000
 
-    Only respond with the actions needed to fill the form using the format 'text=...' for selectors.
+    Only respond with the actions needed to fill the form using the format 'text=...' for selectors. Continue to next page if there is one.
     """
 
 

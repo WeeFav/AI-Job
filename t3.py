@@ -1,7 +1,16 @@
 from playwright.sync_api import sync_playwright
+import time
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False, slow_mo=100)
     page = browser.new_page()
-    page.goto("https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Evendale/AI-Digital-Technology-Intern_R5009391")
-    page.get_by_role("button", name="Apply").click()
+    page.goto("https://stmicroelectronics.eightfold.ai/careers/job/563637158900324?domain=stmicroelectronics.com")
+    time.sleep(2)
+    page.click("text=Apply now", timeout=10000)
+    time.sleep(2)
+    elements = page.query_selector_all("input, textarea, select, label, button, a")
+
+    for el in elements:
+        if el.is_visible():
+            html = el.evaluate("el => el.outerHTML")
+            print(html)
