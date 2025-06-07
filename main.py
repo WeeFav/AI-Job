@@ -65,7 +65,8 @@ async def main():
     - Cover Letter → "I am excited to apply for this position..."
     - Expected Salary → 85000
 
-    Only respond with the actions needed to fill the form using the format 'text=...' for selectors. Continue to next page if there is one.
+    The format for selectors should be 'text=...'.
+    Continue to next page if there is one.
     """
 
 

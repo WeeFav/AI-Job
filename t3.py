@@ -10,7 +10,10 @@ with sync_playwright() as p:
     time.sleep(2)
     elements = page.query_selector_all("input, textarea, select, label, button, a")
 
+    raw_html = []
     for el in elements:
         if el.is_visible():
             html = el.evaluate("el => el.outerHTML")
-            print(html)
+            raw_html.append(html)
+    
+    print("\n".join(raw_html))

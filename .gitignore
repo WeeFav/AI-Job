@@ -1,2 +1,4 @@
 .env
 __pycache__/
+auth.json
+user-data/

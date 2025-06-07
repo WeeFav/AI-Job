@@ -24,5 +24,15 @@ class ExtractHTMLTool(MyBaseBrowserTool):
         if self.async_browser is None:
             raise ValueError(f"Asynchronous browser not provided to {self.name}")
         page = await aget_current_page(self.async_browser)
-        html_content = await page.content()
+        
+        # html_content = await page.content()
+        
+        elements = await page.query_selector_all("input, textarea, select, label, button, a")
+        raw_html = []
+        for el in elements:
+            if await el.is_visible():
+                html = await el.evaluate("el => el.outerHTML")
+                raw_html.append(html)
+        html_content = "\n".join(raw_html)
+
         return html_content
