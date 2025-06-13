@@ -1,4 +1,4 @@
 .env
 __pycache__/
-auth.json
+auth/
 user-data/

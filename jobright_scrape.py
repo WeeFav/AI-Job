@@ -19,7 +19,7 @@ def get_auth():
         
         page.pause()
         
-        context.storage_state(path="auth.json")
+        context.storage_state(path="auth/jobright_auth.json")
     
 def main():
     with sync_playwright() as playwright:
@@ -28,7 +28,7 @@ def main():
             channel="chrome",
             headless=False,
         )
-        context = browser.new_context(storage_state="auth.json")
+        context = browser.new_context(storage_state="auth/jobright_auth.json")
         page = context.new_page()
 
         page.goto("https://jobright.ai/jobs/recommend")
