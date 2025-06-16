@@ -1,37 +1,83 @@
-from langchain_community.agent_toolkits import PlayWrightBrowserToolkit
-from langchain_community.tools.playwright.utils import create_sync_playwright_browser
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.agents import AgentExecutor, create_react_agent
-import getpass
-import os
+from tools.navigate import NavigateTool
+from tools.extract_text import ExtractTextTool
+from tools.click import ClickTool
+from tools.fill import FillTool
+from tools.extract_html import ExtractHTMLTool
+from tools.select import SelectTool
 from dotenv import load_dotenv
-from langchain import hub
-import time
+import os
+import getpass
+from langgraph.prebuilt import create_react_agent
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.tracers import LangChainTracer
+import asyncio
+from playwright.async_api import async_playwright
+
 load_dotenv()
 
-sync_browser = create_sync_playwright_browser(headless=False) # initiate browser
-toolkit = PlayWrightBrowserToolkit.from_browser(sync_browser=sync_browser) # wrap browser in langchain toolkit
-tools = toolkit.get_tools()
-
-prompt = hub.pull("hwchase17/react")
+tracer = LangChainTracer(project_name="aijob")
 
 if "GOOGLE_API_KEY" not in os.environ:
     os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter your Google AI API key: ")
 
-llm = ChatGoogleGenerativeAI(
+model = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
     temperature=0,
 )
 
-url = "https://careers.oceaneering.com/global/en/job/OCINGLOBAL29365"
-cmd = f"""
-Go to {url} and apply to the job using a generated user profile 
-"""
+async def main():
+    tool_cls = [
+        NavigateTool,
+        ExtractTextTool,
+        ClickTool,
+        FillTool,
+        ExtractHTMLTool,
+        SelectTool
+    ]
 
-agent = create_react_agent(llm, tools, prompt)
-agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
-command = {
-    "input": cmd
-}
+    playwright = await async_playwright().start()
+    async_browser = await playwright.chromium.launch(headless=False)
+    tools = [t.from_browser(async_browser=async_browser) for t in tool_cls]
 
-agent_executor.invoke(command)
+    print(tools)
+
+    langgraph_agent_executor = create_react_agent(model, tools)
+
+    # url = "http://localhost:5173/"
+    url = "https://stmicroelectronics.eightfold.ai/careers/job/563637158900324?domain=stmicroelectronics.com"
+    query = f"""
+    Navigate to {url} and determine if a job application form is immediately visible or hidden behind an 'Apply' button or link.
+    If necessary, click the appropriate button to reveal the form.
+
+    Once the form is visible:
+    1. Extract all visible form fields (inputs, textareas, select boxes, file uploads).
+    2. For each field, infer what kind of data is expected based on its label, name, or placeholder.
+    3. Automatically generate realistic, fake sample data to fill in the fields. Do not ask for input or clarification.
+
+    Examples:
+    - Name → John Doe  
+    - Email → johndoe@example.com  
+    - Phone → 555-123-4567  
+    - LinkedIn → https://linkedin.com/in/johndoe  
+    - Resume → resume.pdf  
+    - Address → 123 Main St, New York, NY  
+    - Website → https://johndoe.dev  
+    - Cover Letter → "I am excited to apply for this position..."
+    - Expected Salary → 85000
+
+    The format for selectors should be 'text=...'.
+    Continue to next page if there is one.
+    """
+
+
+        
+    async for step in langgraph_agent_executor.astream({"messages": [("human", query)]}, config={"callbacks": [tracer], "recursion_limit": 100}):
+        print(step)
+        print("------------------------------------------------------------------------")
+        
+    await async_browser.close()
+    await playwright.stop()
+    
+if __name__ == "__main__":
+    asyncio.run(main())
+

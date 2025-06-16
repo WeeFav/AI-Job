@@ -21,7 +21,7 @@ def get_auth():
         
         context.storage_state(path="auth/jobright_auth.json")
     
-def main():
+def scrape():
     with sync_playwright() as playwright:
         # open browser and navigate to jobright
         browser = playwright.chromium.launch(
@@ -60,4 +60,4 @@ def main():
 
         
 if __name__ == '__main__':
-    main()
+    scrape()
