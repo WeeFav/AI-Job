@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright, Playwright
 import time
 import pandas as pd
-
+import math
 
 def get_auth():
     """Only need when need to sign into LinkedIn"""
@@ -22,7 +22,7 @@ def get_auth():
 
 def scrape(jobs_to_scrape):
     jobs_per_page = 25
-    pages = (jobs_to_scrape // jobs_per_page) + 1
+    pages = math.ceil(jobs_to_scrape / jobs_per_page)
     
     with sync_playwright() as playwright:
         jobs = {
@@ -64,11 +64,15 @@ def scrape(jobs_to_scrape):
                 apply_text = apply_locator.locator("span.artdeco-button__text").inner_text()
                 
                 if apply_text == "Apply":
-                    with page.expect_popup() as popup_info:
-                        apply_locator.click()
-                    new_page = popup_info.value
-                    url = new_page.url
-                    new_page.close()
+                    try:
+                        with page.expect_popup() as popup_info:
+                            apply_locator.click()
+                        new_page = popup_info.value
+                        url = new_page.url
+                        new_page.close()
+                    except TimeoutError:
+                        print("Timeout: No popup appeared within 30 seconds")
+                        url = page.url
                 elif apply_text == "Easy Apply":
                     url = page.url
                 
@@ -81,10 +85,8 @@ def scrape(jobs_to_scrape):
             # click pagination
             if page_num is not pages:
                 pagination_locator = page.locator("ul.jobs-search-pagination__pages")
-                pagination_locator.get_by_text(f"{str(page_num + 1)}")
-                pagination_locator.click()
-            
-
+                pagination_locator.get_by_text(f"{str(page_num + 1)}").click()
+                            
         context.close()
         browser.close() 
         

@@ -1,8 +1,6 @@
 from playwright.sync_api import sync_playwright
 import time
-
-jobs_to_scrape = 10
-jobs_per_page = 10
+import math
 
 def get_auth():
     """Only need when need to sign into google"""
@@ -21,7 +19,17 @@ def get_auth():
         
         context.storage_state(path="auth/jobright_auth.json")
     
-def scrape():
+def scrape(jobs_to_scrape):
+    jobs_per_page = 10
+    pages = math.ceil(jobs_to_scrape / jobs_per_page)
+    
+    jobs = {
+        'title': [],
+        'company': [],
+        'description': [], 
+        'url': []
+    }
+    
     with sync_playwright() as playwright:
         # open browser and navigate to jobright
         browser = playwright.chromium.launch(
@@ -39,7 +47,7 @@ def scrape():
         ul_locator = page.locator("ul.ant-list-items")
         ul_locator.wait_for()
         
-        for i in range(jobs_to_scrape // jobs_per_page):
+        for i in range(pages - 1):
             scroll_locator.evaluate("(el) => { el.scrollTop = el.scrollHeight; }")
             time.sleep(2) # wait for jobs to load
         
@@ -51,12 +59,10 @@ def scrape():
             page.goto(f"https://jobright.ai/jobs/info/{job_id}")
             company = page.locator("h2.index_company-row__vOzgg").inner_text().split("\n")[0]
             title = page.locator("h1.index_job-title__sStdA").text_content()
-            apply_url = page.locator("a.index_origin__7NnDG").get_attribute("href")
+            url = page.locator("a.index_origin__7NnDG").get_attribute("href")
             print("Company:", company)
             print("Title:", title)
-            print("URL: ", apply_url)
-        
-        # page.click("xpath=//*[@id='6843a5ecc28f21afd582aad4']")
+            print("URL: ", url)
 
         
 if __name__ == '__main__':
