@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 import time
 import math
+import pandas as pd
 
 def get_auth():
     """Only need when need to sign into google"""
@@ -54,16 +55,43 @@ def scrape(jobs_to_scrape):
         # get job list
         divs = ul_locator.locator("xpath=/div")
         job_ids = [divs.nth(i).get_attribute("id") for i in range(divs.count())]
+        
         # scape each job
         for job_id in job_ids:
+            if jobs_to_scrape == 0:
+                break
             page.goto(f"https://jobright.ai/jobs/info/{job_id}")
             company = page.locator("h2.index_company-row__vOzgg").inner_text().split("\n")[0]
             title = page.locator("h1.index_job-title__sStdA").text_content()
             url = page.locator("a.index_origin__7NnDG").get_attribute("href")
-            print("Company:", company)
-            print("Title:", title)
-            print("URL: ", url)
 
+            description = ""
+            summary = page.locator("p.index_company-summary__8nWbU").inner_text()            
+            description += "Summary: \n" + summary + "\n\n"
+            responsibility = page.locator("xpath=//div[preceding-sibling::div[h2[text()='Responsibilities']]]").inner_text()
+            description += "Responsibilities: \n" + responsibility + "\n\n"
+            
+            description += "Qualification: \n"
+            
+            qualification_locator = page.locator("xpath=//section[@id='skills-section']//div[@class='index_flex-col__Y_QL8']")
+            for i in range(qualification_locator.count()):
+                sub_title = qualification_locator.nth(i).locator("h4.index_qualifications-sub-title__IA6rq").inner_text()
+                list_divs = qualification_locator.nth(i).locator('xpath=/div')
+                required_qualification = "\n".join(["  -" + list_divs.nth(i).inner_text() for i in range(list_divs.count())])
+                description += sub_title + "\n"
+                description += required_qualification + "\n\n"
+                
+            jobs['title'].append(title)
+            jobs['company'].append(company)
+            jobs['description'].append(description)
+            jobs['url'].append(url)
+            
+            jobs_to_scrape -= 1
         
+        context.close()
+        browser.close() 
+        
+        pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")   
+
 if __name__ == '__main__':
     scrape()
