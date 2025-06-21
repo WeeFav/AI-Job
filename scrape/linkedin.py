@@ -59,6 +59,8 @@ def scrape(jobs_to_scrape):
                 company = page.locator("div.job-details-jobs-unified-top-card__company-name").inner_text()
                 description = page.locator("xpath=//div[@id='job-details']/div[@class='mt4']").inner_text()
                 
+                print(description)
+                
                 apply_locator = page.locator("button#jobs-apply-button-id").first
                 apply_locator.wait_for()
                 apply_text = apply_locator.locator("span.artdeco-button__text").inner_text()
@@ -81,6 +83,8 @@ def scrape(jobs_to_scrape):
                 jobs['description'].append(description)
                 jobs['url'].append(url)
                 jobs_to_scrape -= 1
+                
+                page.pause()
             
             # click pagination
             if page_num is not pages:

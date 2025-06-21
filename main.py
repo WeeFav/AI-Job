@@ -1,5 +1,5 @@
 import scrape.jobright
 import scrape.linkedin
 
-# scrape.linkedin.scrape(50)
-scrape.jobright.scrape(5)
+scrape.linkedin.scrape(10)
+# scrape.jobright.scrape(5)

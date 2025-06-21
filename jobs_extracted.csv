@@ -1,4 +1,4 @@
-title,company,description,url
+title,company,description,url,description_extracted
 Software Engineering Co-Op ,Lensa,"Lensa partners with DirectEmployers to promote this job for Kratos Defense & Security Solutions.
 
 Job Descriptions
@@ -92,7 +92,29 @@ From: Kratos Defense
 
 If you have questions about this posting, please contact support@lensa.com
 
-",https://lensa.com/cgw/fc2cd92a54d444848a07c121436544d3tjo1?jpsi=directemployers&publisher_preference=easier_apply&utm_campaign=Computer%20Occupations&utm_medium=slot&utm_source=linkedin&utm_term=jse
+",https://lensa.com/cgw/fc2cd92a54d444848a07c121436544d3tjo1?jpsi=directemployers&publisher_preference=easier_apply&utm_campaign=Computer%20Occupations&utm_medium=slot&utm_source=linkedin&utm_term=jse,"**GENERAL JOB SUMMARY:** Join a collaborative software engineering team to support the design, development, and testing of software projects. Gain hands-on experience working on real-world applications and integrating software with hardware systems.
+
+**Essential Job Functions**
+
+*   Assist in the design, coding, and implementation of software modules.
+*   Contribute to software testing activities, including test planning and execution.
+*   Document testing results and provide clear, organized reports.
+*   Support the creation and maintenance of software documentation.
+*   Collaborate on hardware and software integration tasks for system-level testing.
+
+**KNOWLEDGE, SKILLS, AND ABILITIES REQUIRED:**
+
+*   Ability to manage sensitive and confidential information in compliance with security standards.
+*   Strong interpersonal skills and the ability to work effectively within a team environment.
+*   Professional conduct in interactions with both team members and the public.
+*   Adherence to company policies, procedures, and workplace standards.
+*   Familiarity with software development life cycles and testing methodologies preferred.
+*   Understanding of microprocessors, computer-based control systems, and related software is a plus.
+
+**Education And Experience**
+
+*   Currently pursuing a bachelor’s degree in Computer Science, Software Engineering, or a related field.
+*   Basic experience with MS Office applications."
 Software Engineer Intern/Part-time/Full-time,Crave & Cook Inc,"Company Description
 
 At Crave & Cook, Inc., we are committed to bringing simplicity and joy back to home cooking. Our mission is to help customers enjoy healthy, delicious meals without the hassle of grocery shopping or ingredient preparation.
@@ -142,7 +164,37 @@ Excellent communication and teamwork skills
 Ability to manage multiple tasks and prioritize effectively
 Experience with machine learning algorithms and predictive modeling is a plus
 Bachelor's or Master's degree in Data Science, Statistics, Computer Science, or a related field preferred
-Speak Chinese is a Big Plus!!!!",https://www.linkedin.com/jobs/search/?currentJobId=4253273576&f_TPR=r604800&geoId=103644278&keywords=software%20internship&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true
+Speak Chinese is a Big Plus!!!!",https://www.linkedin.com/jobs/search/?currentJobId=4253273576&f_TPR=r604800&geoId=103644278&keywords=software%20internship&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true,"Role Description
+
+This is a full-time on-site role located in Fairview, TX, for a Data Scientist Intern/Part-time/Full-time role at Crave & Cook Inc. The Software Engineer will be responsible for:
+
+1. Assist in developing and maintaining front end (Vue.js / Uni-app) and back end (Node.js) features.
+
+2. Help integrate APIs and manage MySQL databases.
+
+3. Analyze customer behavior data to improve meal personalization, predict preferences, and enhance user satisfaction with tailored meal recommendations.
+
+4. Build predictive models to forecast demand, reduce food waste, and optimize inventory planning across supply chain and fulfillment centers.
+
+5. Build predictive models to forecast demand, reduce food waste, and optimize inventory planning across supply chain and fulfillment centers.
+
+6. Develop A/B testing frameworks to test product features, meal options, and pricing strategies for continuous product and experience optimization.
+
+7. Participate in team meetings and contribute to product development discussions.
+
+8. Support testing, debugging, and documentation.
+
+Qualifications
+
+Front end (Vue.js / Uni-app) and back end (Node.js) features
+Experience with Statistics and Data Visualization
+Proficiency in programming languages such as Python, R, or SQL
+Strong analytical and problem-solving capabilities
+Excellent communication and teamwork skills
+Ability to manage multiple tasks and prioritize effectively
+Experience with machine learning algorithms and predictive modeling is a plus
+Bachelor's or Master's degree in Data Science, Statistics, Computer Science, or a related field preferred
+Speak Chinese is a Big Plus!!!!"
 Software Engineer Summer Internship ,Siemens,"Fall Internship Start Dates: August 18th, 25th 
 
 Here at Siemens, we take pride in enabling sustainable progress through technology. We do this through empowering customers by combining the real and digital worlds. Improving how we live, work, and move today and for the next generation! We know that the only way a business thrives is if our people are thriving. That’s why we always put our people first. Our global, diverse team would be happy to support you and challenge you to grow in new ways. Who knows where our shared journey will take you?
@@ -227,7 +279,34 @@ Criminal History
 
 Qualified applications with arrest or conviction records will be considered for employment in accordance with applicable local and state laws.
 
-",https://jobs.siemens.com/careers/job/563156125633359?hl=en&utm_source=linkedin&domain=siemens.com&sourceType=PREMIUM_POST_SITE
+",https://jobs.siemens.com/careers/job/563156125633359?hl=en&utm_source=linkedin&domain=siemens.com&sourceType=PREMIUM_POST_SITE,"Siemens Smart Infrastructure is seeking motivated interns for our Software Engineering team in Wendell, NC to support our portfolio of business, products and solutions. Join our team and contribute to real-world software projects in a collaborative and global environment. This role offers exposure to modern development practices, international collaboration, and engineering processes from design to production.
+
+You’ll make an impact by:
+
+*   Work closely with both Low Voltage and Medium Voltage development teams on active engineering projects.
+*   Write and maintain software using Python and C# and Visual Basic.
+*   Develop applications that interact with SQL and relational databases, including performing CRUD (Create, Read, Update, Delete) operations.
+*   Participate in code reviews, debugging, and unit testing.
+*   Use Git for version control and may be asked to build new web applications or enhance existing software tools.
+*   Collaborate with global development teams based in India and Germany, learning how distributed engineering functions.
+*   Gain hands-on understanding of Bill of Materials (BOM) management and its role in operations and 3D design workflows.
+*   Be exposed to AI-powered workflows, where appropriate, to support automation or intelligent processing needs.
+*   Learn and apply software engineering best practices in a production setting.
+
+Basic Qualifications:
+
+*   Currently enrolled undergraduate or graduate student studying Computer Science or Computer Engineering or related field.
+*   Ability to report in-person to the Wendell, NC office for part time hours up to 29 hours /week without housing or travel/relocation compensation assistance.
+
+Preferred Qualifications:
+
+*   Proficiency in Python, C#, VB or similar languages.
+*   Familiarity with version control systems (e.g., Git).
+*   Foundational knowledge of data structures, algorithms, and object-oriented programming.
+*   Experience or coursework related to databases, web development, or software design.
+*   Strong problem-solving and communication skills.
+*   Ability to work independently and as part of a distributed team.
+*   Web development in cloud infrastructure setting a plus"
 Software Engineering Intern - Fall 2025 ,Leonardo DRS,"Job ID: 112128 
 
 The Leonardo DRS Land Electronics business provides C4I Network computing and integrated situational awareness, as well as state-of-the-art embedded diagnostics, vehicle power management and combat vehicle integration products and services.
@@ -260,7 +339,23 @@ Taking care of our people is a top priority at Leonardo DRS. We are proud to off
 Some employees are eligible for limited benefits only
 
 
-Leonardo DRS, Inc. and its subsidiaries provide equal opportunities to all employees and applicants for employment and prohibit discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, protected veteran status, or any other characteristic protected by federal, state, or local laws. #LEL",https://careers.leonardodrs.com/job/Huntsville-Software-Engineering-Intern-Fall-2025-AL-35808/1289441400/?feedId=336500&utm_source=LinkedInJobPostings&utm_campaign=LeonardoDRS_LinkedIn
+Leonardo DRS, Inc. and its subsidiaries provide equal opportunities to all employees and applicants for employment and prohibit discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, protected veteran status, or any other characteristic protected by federal, state, or local laws. #LEL",https://careers.leonardodrs.com/job/Huntsville-Software-Engineering-Intern-Fall-2025-AL-35808/1289441400/?feedId=336500&utm_source=LinkedInJobPostings&utm_campaign=LeonardoDRS_LinkedIn,"**Job Summary**
+
+We are seeking a candidate to collaborate with our Principal Software Engineer on pre-engineered projects aimed at enhancing internal efficiency and expanding technological capabilities aligned with program needs. This internship offers a valuable opportunity for growth and development, with the potential to transition into a full-time role for the right candidate.
+
+**Job Responsibilities**
+
+*   Support engineering with routine engineering duties and/or hands-on tasks
+*   Work independently on daily tasks
+*   Under direction, responsible for completing process documentation
+*   Assist in the creation of documentation to maintain equipment
+*   Support, communicate, reinforce, and defend the mission, values, and culture of the organization
+
+**Qualifications**
+
+*   High school diploma or GED
+*   Junior/Senior level college student majoring in Software Engineering or Computer Science
+*   Novice technical expertise and beginning familiarity with the shop/laboratory and equipment"
 UWB RADAR Software Development Intern ,NXP Semiconductors,"Responsibilities
 
 
@@ -282,7 +377,20 @@ Self-motivated and good team work is required.
 
 More information about NXP in Greater China...
 
-",https://nxp.wd3.myworkdayjobs.com/careers/job/Shanghai-JingAn/UWB-RADAR-Software-Development-Intern_R-10056834?source=LinkedIn
+",https://nxp.wd3.myworkdayjobs.com/careers/job/Shanghai-JingAn/UWB-RADAR-Software-Development-Intern_R-10056834?source=LinkedIn,"**Responsibilities**
+
+UWB radar application investigation for CPD and kick sensor
+Work with team to conduct lab measurement and CIR data analysis
+CPD or relevant algorithm implementing and verification based on 29D6 or external MCU
+
+**Requirements**
+
+Bachelor or master degree in Microelectronics, Electronics, Electrical Engineering, Computer Science or relevant disciplines
+Good knowledge and experience in C/C++, Python, MATLAB programming
+Good knowledge on RTOS is a plus
+Excellent communications and presentation skills.
+Good in speaking and writing English.
+Self-motivated and good team work is required."
 AI Intern ,Formstack,"POSITION OVERVIEW
 
 
@@ -360,8 +468,42 @@ Don’t meet every single requirement? Studies have shown that women and people 
 Formstack, is an equal opportunity employer. We are passionately committed to equitable hiring and boldly dedicated to diversity in our work and staff. We do not discriminate in employment opportunities or practices based on actual or perceived race, color, religion, national origin, sex (including pregnancy, childbirth, or related conditions), age, marital status, sexual orientation, gender identity or expression, veteran status, uniform service member status, disability or any other characteristic protected by law. Women, people of color, including bilingual and bicultural individuals, LGBTQ+ persons, and people with disabilities, are encouraged to apply.
 
 
-",https://jobs.lever.co/formstack/4c2cbe26-5948-4686-95a4-8f7145d7d2a8
-Software Intern - AI Compilers,Tenstorrent,"Tenstorrent is leading the industry on cutting-edge AI technology, revolutionizing performance expectations, ease of use, and cost efficiency. With AI redefining the computing paradigm, solutions must evolve to unify innovations in software models, compilers, platforms, networking, and semiconductors. Our diverse team of technologists have developed a high performance RISC-V CPU from scratch, and share a passion for AI and a deep desire to build the best AI platform possible. We value collaboration, curiosity, and a commitment to solving hard problems. We are growing our team and looking for contributors of all seniorities. At Tenstorrent, you will have the chance to accelerate your career by working on challenging engineering problems with a dedicated mentor and the opportunity to move between the digital design, verification, firmware, software and system engineering teams. This role is on-site based in Austin, TX; Santa Clara, CA; or Toronto, ON. Responsibilities include developing machine learning graph compiler, participating in the co-design of Tenstorrent's hardware and software stack, benchmarking, analyzing, and optimizing performance of key machine learning applications across Tenstorrent's hardware and software stack, developing performance analysis and estimation infrastructure that feeds into Tenstorrent compiler, developing high-performance run-time engine, integrating the Tenstorrent software into leading machine learning frameworks, working closely with machine learning engineers to discover the hardware and software requirements of current and future machine learning applications, and developing novel ML models and primitives that take advantage of Tenstorrent’s breakthrough architecture to deliver orders of magnitude performance & efficiency improvements. Experience & Qualifications: Final year BS/MS or PhD candidate in EE/ECE/CE/CS with a strong GPA, experience with algorithms, data structures, and software development in C/C++. Python expertise is welcome as well. Familiarity with and passion for any of the following -- machine learning, compilers, parallel programming, high-performance and massively parallel systems, processor and computer architecture -- is a plus. Strong problem solving and analytical skills.",https://tenstorrent.easyapply-ats.com/us/linkedin/6855e1dd0740f14f17c1d393
+",https://jobs.lever.co/formstack/4c2cbe26-5948-4686-95a4-8f7145d7d2a8,"**POSITION OVERVIEW**
+
+As an AI Intern, you’ll partner directly with our CIO, People team, and leaders across the business to accelerate adoption, experimentation, and fluency. This isn’t about theory—it’s about real-world use cases, workflow breakthroughs, and wow moments. If you’re curious, resourceful, and energized by the idea of helping a high-growth tech company thrive on the edge of innovation, we want to hear from you.
+
+**RESPONSIBILITIES**
+
+Collaborate with our CIO, People team, and department leaders to scale AI adoption across the org
+Build and maintain an internal library of high-impact prompts, sorted by function and workflow
+Shadow teams to uncover friction points and identify AI-enabled solutions that drive productivity
+Support the creation of onboarding materials, live demos, job aids, and training for employees at all levels
+Pilot and document real-world AI use cases that align with business priorities and unlock new ways of working
+Help build excitement and momentum through internal campaigns, peer training, and success stories
+Track adoption metrics and employee feedback to iterate and improve continuously
+Stay on top of emerging AI tools (ChatGPT, Claude, Gemini, etc.) and evaluate their potential for team use
+Contribute to a culture of experimentation, continuous learning, and responsible AI use aligned to The Formstack Standard
+
+**KNOWLEDGE, SKILLS, AND ABILITIES // REQUIRED**
+
+Currently pursuing a Bachelor’s or Master’s degree in Computer Science, Data Science, Human-Computer Interaction, Organizational Psychology, or a related field—or equivalent experience
+Google Cloud Certified in Generative AI or similar (or committed to completing certification before start)
+Strong understanding of generative AI tools, prompt design, and how AI can augment human performance
+Clear communicator who can simplify technical concepts and inspire teams to embrace new tools
+Creative problem-solver with a bias for action, experimentation, and iteration
+Highly organized and able to work independently in a fast-paced, ever-evolving environment
+Enthusiastic about helping others adopt new technology with empathy and clarity
+Basic coding skills (such as python or java) to help bridge the no-code gap or better integrate tools.
+
+**KNOWLEDGE, SKILLS, AND ABILITIES // PREFERRED**
+
+Experience with enablement, instructional design, or internal communications
+Familiarity with low-code/no-code tools (e.g., Notion, Airtable, Zapier, n8n, MCP)
+Background in workshop facilitation or content creation
+Exposure to prompt engineering or AI knowledge base development"
+Software Intern - AI Compilers,Tenstorrent,"Tenstorrent is leading the industry on cutting-edge AI technology, revolutionizing performance expectations, ease of use, and cost efficiency. With AI redefining the computing paradigm, solutions must evolve to unify innovations in software models, compilers, platforms, networking, and semiconductors. Our diverse team of technologists have developed a high performance RISC-V CPU from scratch, and share a passion for AI and a deep desire to build the best AI platform possible. We value collaboration, curiosity, and a commitment to solving hard problems. We are growing our team and looking for contributors of all seniorities. At Tenstorrent, you will have the chance to accelerate your career by working on challenging engineering problems with a dedicated mentor and the opportunity to move between the digital design, verification, firmware, software and system engineering teams. This role is on-site based in Austin, TX; Santa Clara, CA; or Toronto, ON. Responsibilities include developing machine learning graph compiler, participating in the co-design of Tenstorrent's hardware and software stack, benchmarking, analyzing, and optimizing performance of key machine learning applications across Tenstorrent's hardware and software stack, developing performance analysis and estimation infrastructure that feeds into Tenstorrent compiler, developing high-performance run-time engine, integrating the Tenstorrent software into leading machine learning frameworks, working closely with machine learning engineers to discover the hardware and software requirements of current and future machine learning applications, and developing novel ML models and primitives that take advantage of Tenstorrent’s breakthrough architecture to deliver orders of magnitude performance & efficiency improvements. Experience & Qualifications: Final year BS/MS or PhD candidate in EE/ECE/CE/CS with a strong GPA, experience with algorithms, data structures, and software development in C/C++. Python expertise is welcome as well. Familiarity with and passion for any of the following -- machine learning, compilers, parallel programming, high-performance and massively parallel systems, processor and computer architecture -- is a plus. Strong problem solving and analytical skills.",https://tenstorrent.easyapply-ats.com/us/linkedin/6855e1dd0740f14f17c1d393,"Responsibilities include developing machine learning graph compiler, participating in the co-design of Tenstorrent's hardware and software stack, benchmarking, analyzing, and optimizing performance of key machine learning applications across Tenstorrent's hardware and software stack, developing performance analysis and estimation infrastructure that feeds into Tenstorrent compiler, developing high-performance run-time engine, integrating the Tenstorrent software into leading machine learning frameworks, working closely with machine learning engineers to discover the hardware and software requirements of current and future machine learning applications, and developing novel ML models and primitives that take advantage of Tenstorrent’s breakthrough architecture to deliver orders of magnitude performance & efficiency improvements.
+
+Experience & Qualifications: Final year BS/MS or PhD candidate in EE/ECE/CE/CS with a strong GPA, experience with algorithms, data structures, and software development in C/C++. Python expertise is welcome as well. Familiarity with and passion for any of the following -- machine learning, compilers, parallel programming, high-performance and massively parallel systems, processor and computer architecture -- is a plus. Strong problem solving and analytical skills."
 "Software Engineering Intern - Summer 2025 (Teradyne, San Jose, CA) ",Teradyne,"Our Purpose 
 
 TERADYNE, where experience meets innovation and driving excellence in every connection. We are fueled by creativity and diversity of thought and in our workforce. Our employees are supported to innovate and learn something new every day.
@@ -398,7 +540,27 @@ We are only considering candidates local to position location and are unable to 
 
 This position is not eligible for visa sponsorship.
 
-",https://jobs.teradyne.com/Teradyne/job/San-Jose-Software-Engineering-Intern-Summer-2025-%28Teradyne%2C-San-Jose%2C-CA%29-CA-95101/1294847900/?utm_source=LINKEDIN&utm_medium=referrer
+",https://jobs.teradyne.com/Teradyne/job/San-Jose-Software-Engineering-Intern-Summer-2025-%28Teradyne%2C-San-Jose%2C-CA%29-CA-95101/1294847900/?utm_source=LINKEDIN&utm_medium=referrer,"Opportunity Overview The Software Engineering team in San Jose is looking for a Software Engineer Intern with passion for learning, developing high quality software, solving complex problems, and becoming part of a smart and innovative team. Are you able to balance a variety of tasks related to requirements definition, software system design, development, testing, troubleshooting, and maintenance? Interact with multi-functional teams from the product definition stage through product release? Then you're exactly who we're looking for! This role has some hybrid flexibility however the candidate must be able to work on-site at the San Jose office. 
+
+In This Role You Will
+
+*   Work with experienced software engineers to design, implement, test, and deploy software components for our Runtime and System Software supporting our Magnum Tester Platforms.
+*   Work with software verification engineers to devise, document and execute effective test strategies and plans.
+
+All About You
+
+We seek individuals who share our passion and willingness. Our commitment to customer success drives us to go the extra mile. If you’re ready to join us in this mission, take a closer look at the minimum criteria for the position.
+
+*   Current student at an accredited college or university
+*   Pursuing a bachelor’s degree program in Computer Science or Computer Engineering
+*   Demonstrated leadership qualities through projects or extracurricular activities
+*   Able to clearly express your ideas and concepts both written and verbally
+*   Capable with object-oriented software design, and implementation
+*   Proficiency in C, C++, C# development
+*   Working knowledge of data structures and algorithms, and operating systems (Windows, Linux)
+*   General knowledge of Object-Oriented Analysis and Design/Programming Concepts
+*   Experience with development tools: Visual Studio and Git
+*   Ability and interest in working with hardware engineers and cross functional teams ."
 Software Dev Intern 1 Year,The Church of Jesus Christ of Latter-day Saints,"Job Description
 
 We are looking for an upbeat and dedicated individual who loves to learn new technologies, and you are looking for an internship, keep reading!
@@ -480,7 +642,44 @@ Church employees find joy and satisfaction in using their unique talents and abi
 
 Only members of the Church who are worthy of a temple recommend qualify for employment. Apart from this, the Church is an equal opportunity employer and does not discriminate in its employment decisions on any basis that would violate U.S. or local law.
 
-Qualified applicants will be considered for employment without regard to race, national origin, color, gender, pregnancy, marital status, age, disability, genetic information, veteran status, or other legally protected categories that apply to the Church. The Church will make reasonable accommodations for qualified individuals with known disabilities.",https://epej.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/ChurchEmployment/job/369064?utm_medium=jobboard&utm_source=linkedin
+Qualified applicants will be considered for employment without regard to race, national origin, color, gender, pregnancy, marital status, age, disability, genetic information, veteran status, or other legally protected categories that apply to the Church. The Church will make reasonable accommodations for qualified individuals with known disabilities.",https://epej.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/ChurchEmployment/job/369064?utm_medium=jobboard&utm_source=linkedin,"We are looking for an upbeat and dedicated individual who loves to learn new technologies, and you are looking for an internship, keep reading!
+
+This internship position represents an exciting opportunity to work for one of the largest information technology centers in the Wasatch front. This individual works with divine guidance to provide or support technology that furthers the mission of the Church and reflects the eternal impact of the gospel. A skilled and seasoned mentor will be provided to guide you during the internship.
+
+Responsibilities
+
+A Day in the Life:
+
+Examples of activities you will accomplish include specific development tasks in various programming languages, unit testing, debugging and correcting defects in code, meetings with project team members and customers, reporting on current activities, working with databases and issue tracking systems and working in both individual and paired programming assignments. This is an excellent opportunity for somebody wishing to develop their software development and engineering skills in an extraordinary development environment.
+
+ Work with state-of-the art tools to help develop enterprise solutions
+ Work on REAL production level projects and solve REAL problems
+ Mentor with highly experienced IT professionals
+ We hasten the Lord's work in an important way
+ Be a member of a creative, spiritual, and highly motivated team and culturelso expected.
+
+Qualifications
+
+ You must be currently enrolled in an accredited college or start the internship within one year of your graduation date. 
+ Internship is for current temple worthy members of the Church of Jesus Christ of Latter-day Saints
+ Should be working toward a degree in the area of engineering, computer science or information technology
+ Excellent communication skills for interacting confidently and providing information within a team environment, often virtually
+ Programming language experience in any of the following: (Java/J2EE, .NET/C#, HTML, CSS, JavaScript, Python, or full-stack development
+
+Familiar with string manipulation, OO design, logic flows and variable scoping
+
+ Familiarity with databases and coding with large data sets
+
+Familiarity with general cloud technologies or AWS, in example - infrastructure as code (server templates, automation templates, policies, etc), or Github actions, cloud formation, Terraform, Azure DevOps, etc.
+
+Familiarity with some aspects of machine learning, in example, AI, machine learning model creation, training, test AWS toolset or Sagemaker
+
+ Ability to work independently and with mentor
+ Ability to multi-task and customer driven requirements
+ Problem solving, decision making, conflict resolution skills are desired
+ Self-motivated with good time management skills
+ We want highly computer literate students that are familiar with various operating systems and internet browser environments.
+ You will be asked to demonstrate your coding experience in the interview."
 "Software Engineer, Performance - Intern ",Nuro,"Who We Are
 
 Nuro exists to better everyday life through robotics. Founded in 2016, Nuro has spent eight years developing autonomous driving (AD) technology and commercializing AD applications. The Nuro Driver™ is our world-class autonomous driving system that combines AD hardware with our generalized AI-first self-driving software. Built to learn and improve through data, the Nuro Driver™ is one of the few driverless autonomous technologies on public roads today.
@@ -505,4 +704,18 @@ You have experience in one or more of the following areas: backend API design, a
 You have strong problem solving and programming skills.
 
 
-At Nuro, we celebrate differences and are committed to a diverse workplace that fosters inclusion and psychological safety for all employees. Nuro is proud to be an equal opportunity employer and expressly prohibits any form of workplace discrimination based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, veteran status, or any other legally protected characteristics.",https://www.nuro.ai/careersitem?gh_jid=6867897&gh_src=bcd22a501us
+At Nuro, we celebrate differences and are committed to a diverse workplace that fosters inclusion and psychological safety for all employees. Nuro is proud to be an equal opportunity employer and expressly prohibits any form of workplace discrimination based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, veteran status, or any other legally protected characteristics.",https://www.nuro.ai/careersitem?gh_jid=6867897&gh_src=bcd22a501us,"**About The Role**
+
+As a software engineering intern, you will work closely with leading experts in the field of machine learning, robotics, and software.
+
+**About The Work**
+
+Our onboard system team’s software engineers provide a reliable and high-performance platform that allows our autonomy teams to integrate their autonomy software and algorithms that work across various self-driving platforms. This work requires close collaboration with our software teams, hardware teams, and systems/safety team to make sure new software and hardware work together safely and reliably and resolve onboard error and performance problems.
+
+**About You**
+
+You have deep expertise and prior experience in some or many of the following areas:
+
+You are a current BS or MS candidate in Computer Science, Electrical Engineering, Robotics, or a related field graduating in December 2025 or later
+You have experience in one or more of the following areas: backend API design, applications development, large-scale distributed systems; data storage and processing systems; advanced algorithms using C++ and Python; machine learning, multithreading; x86 architecture; and software performance tuning and optimization, robotics software frameworks, different compute modalities (CPU, GPU, FPGA) etc.
+You have strong problem solving and programming skills."
