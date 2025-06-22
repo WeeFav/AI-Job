@@ -83,8 +83,6 @@ def scrape(jobs_to_scrape):
                 jobs['description'].append(description)
                 jobs['url'].append(url)
                 jobs_to_scrape -= 1
-                
-                page.pause()
             
             # click pagination
             if page_num is not pages:
