@@ -1,6 +1,7 @@
 from qdrant_client import QdrantClient, models
 from fastembed import TextEmbedding
 import pandas as pd
+import uuid
 
 client = QdrantClient("http://localhost:6333") #connecting to local Qdrant instance
 
@@ -19,26 +20,34 @@ df = pd.read_csv("./jobs_extracted.csv")
 points = []
 
 for i in range(len(df)):
-    hash = df[i]["hash"]
-    title = df[i]["title"]
-    company = df[i]["company"]
-    url = df[i]["url"]
-    description = df[i]["description"]
-    description_extracted = df[i]["description_extracted"]
+    hash = df.iloc[i]["hash"]
+    title = df.iloc[i]["title"]
+    company = df.iloc[i]["company"]
+    url = df.iloc[i]["url"]
+    description = df.iloc[i]["description"]
+    description_extracted = df.iloc[i]["description_extracted"]
 
-    exists = client.retrieve(
+    exists = client.scroll(
         collection_name=collection_name,
-        ids=[hash]
+        scroll_filter=models.Filter(
+            must=[
+                models.FieldCondition(key="hash", match=models.MatchValue(value=hash))
+            ]
+        ),
+        with_payload=False,
+        with_vectors=False,
     )
     
-    if len(exists) > 0:
+    
+    if len(exists[0]) > 0:
         print("Duplicate job found; skipping insert.")
         continue
     else:
         point = models.PointStruct(
-            id=hash,
+            id=str(uuid.uuid4()),
             vector=models.Document(text=description_extracted, model=model_name),
             payload={
+                "hash": hash,
                 "title": title,
                 "company": company,
                 "url": url,
