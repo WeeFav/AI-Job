@@ -1,5 +1,4 @@
 from qdrant_client import QdrantClient, models
-from fastembed import TextEmbedding
 import pandas as pd
 import uuid
 
