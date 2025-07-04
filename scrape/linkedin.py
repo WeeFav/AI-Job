@@ -48,19 +48,23 @@ def scrape(jobs_to_scrape):
             
             # get job list
             lis = ul_locator.locator("xpath=/li")
-            
+            job_ids = []
             for i in range(lis.count()):
+                job_id = lis.nth(i).get_attribute("data-occludable-job-id") 
+                job_ids.append(job_id)
+            print(job_ids)
+            
+            for i in range(len(job_ids)):
+                print(job_ids[i])
                 if jobs_to_scrape == 0:
                     break
-                li_locator = lis.nth(i) 
+                li_locator = ul_locator.locator(f"xpath=/li[@data-occludable-job-id='{job_ids[i]}']")
                 li_locator.click()
             
                 title = page.locator("div.job-details-jobs-unified-top-card__job-title").inner_text()
                 company = page.locator("div.job-details-jobs-unified-top-card__company-name").inner_text()
                 description = page.locator("xpath=//div[@id='job-details']/div[@class='mt4']").inner_text()
-                
-                print(description)
-                
+                                
                 apply_locator = page.locator("button#jobs-apply-button-id").first
                 apply_locator.wait_for()
                 apply_text = apply_locator.locator("span.artdeco-button__text").inner_text()
@@ -83,9 +87,12 @@ def scrape(jobs_to_scrape):
                 jobs['description'].append(description)
                 jobs['url'].append(url)
                 jobs_to_scrape -= 1
+                
+                print(title, company)
+                # page.pause()
             
             # click pagination
-            if page_num is not pages:
+            if page_num != pages:
                 pagination_locator = page.locator("ul.jobs-search-pagination__pages")
                 pagination_locator.get_by_text(f"{str(page_num + 1)}").click()
                             
