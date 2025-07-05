@@ -33,6 +33,11 @@ def preprocess(job_csv_path):
     Do not summarize, only remove irrelevant text.
     Do not add any markdown formatting, only keep plain text.
     """
+    
+    qdrant_jobs = {
+        'hash': [],
+        'description_extracted': []
+    }
 
     for i in range(len(df)):
         # extract job description
@@ -46,10 +51,12 @@ def preprocess(job_csv_path):
         while True:
             try:
                 ai_msg = llm.invoke(messages)
+                description_extracted = ai_msg.content
                 break
             except ResourceExhausted as e:
                 print(f"Retrying in 60 seconds...")
                 time.sleep(60)
+        
                 
         # canonicalize url
         url_norm = canonicalize_url(df.iloc[i]['url'])
@@ -65,13 +72,18 @@ def preprocess(job_csv_path):
             VALUES (%s, %s, %s, %s, %s, %s)
             ON CONFLICT (hash) DO NOTHING
             """, 
-            (hash, df.iloc[i]['title'], df.iloc[i]['company'], url_norm, description, ai_msg.content)
+            (hash, df.iloc[i]['title'], df.iloc[i]['company'], url_norm, description, description_extracted)
         )
         conn.commit()
         
         if cursor.rowcount == 0:
             print(f"[!] Duplicate hash detected: {hash}, nothing inserted.")
+        else:
+            qdrant_jobs['hash'].append(hash)
+            qdrant_jobs['description_extracted'].append(description_extracted)
         
         print(f"processed job {i + 1}")
+    
+    pd.DataFrame(qdrant_jobs).to_csv("./qdrant_jobs.csv", index=False, encoding="utf-8")
         
         
