@@ -16,8 +16,8 @@ def create():
         )
     )    
 
-def insert():
-    df = pd.read_csv("./qdrant_jobs.csv")
+def insert(qdrant_job_csv_path):
+    df = pd.read_csv(qdrant_job_csv_path)
     points = []
 
     for i in range(len(df)):
@@ -40,5 +40,5 @@ def insert():
     )
 
 if __name__ == '__main__':
-    # create()
-    insert()
+    create()
+    # insert("./qdrant_jobs.csv")
