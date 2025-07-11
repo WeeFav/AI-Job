@@ -1,0 +1,7 @@
+playwright
+pandas
+langchain
+langchain-google-genai
+google-api-core
+psycopg2-binary
+qdrant-client

@@ -4,7 +4,7 @@ import scrape.linkedin
 from preprocess_job import preprocess
 
 # scrape.linkedin.scrape(50)
-# scrape.jobright.scrape(5)
+scrape.jobright.scrape(50, 'applied')
 
 # preprocess("./jobs.csv")
-insert("./qdrant_jobs.csv")
+# insert("./qdrant_jobs.csv")
