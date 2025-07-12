@@ -2,25 +2,9 @@ from playwright.sync_api import sync_playwright, Playwright
 import time
 import pandas as pd
 import math
+import os
 
-def get_auth():
-    """Only need when need to sign into LinkedIn"""
-    with sync_playwright() as playwright:
-        context = playwright.chromium.launch_persistent_context(
-            user_data_dir="./user-data",
-            channel="chrome",
-            headless=False,
-            no_viewport=True,
-            args=["--disable-blink-features=AutomationControlled"]
-        )
-        page = context.new_page()
-        page.goto("https://www.linkedin.com/")
-        
-        page.pause()
-        
-        context.storage_state(path="auth/linkedin_auth.json")
-
-def scrape(jobs_to_scrape):
+def scrape_linkedin(jobs_to_scrape):
     jobs_per_page = 25
     pages = math.ceil(jobs_to_scrape / jobs_per_page)
     
@@ -35,9 +19,9 @@ def scrape(jobs_to_scrape):
         # open browser and navigate to jobright
         browser = playwright.chromium.launch(
             channel="chrome",
-            headless=False,
+            headless=True,
         )
-        context = browser.new_context(storage_state="auth/linkedin_auth.json")
+        context = browser.new_context(storage_state="./auths/linkedin_auth.json")
         page = context.new_page()
 
         page.goto("https://www.linkedin.com/jobs/search/?f_TPR=r604800&geoId=103644278&keywords=software%20internship&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true")
@@ -97,8 +81,4 @@ def scrape(jobs_to_scrape):
         context.close()
         browser.close() 
         
-        pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")   
-            
-if __name__ == '__main__':
-    # get_auth()
-    scrape(10)
+        pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")
