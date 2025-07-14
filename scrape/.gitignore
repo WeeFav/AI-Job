@@ -1,0 +1,8 @@
+.env
+/__pycache__
+/auth
+/user-data
+jobs.csv
+jobs_extracted.csv
+label_studio_text.txt
+qdrant_jobs.csv

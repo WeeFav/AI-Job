@@ -20,7 +20,7 @@ def get_auth():
         
         context.storage_state(path="auth/linkedin_auth.json")
 
-def scrape(jobs_to_scrape):
+def scrape_linkedin(jobs_to_scrape):
     jobs_per_page = 25
     pages = math.ceil(jobs_to_scrape / jobs_per_page)
     
@@ -97,8 +97,8 @@ def scrape(jobs_to_scrape):
         context.close()
         browser.close() 
         
-        pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")   
+        return jobs
             
 if __name__ == '__main__':
     # get_auth()
-    scrape(10)
+    scrape_linkedin(10)

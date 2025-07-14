@@ -20,7 +20,7 @@ def get_auth():
         
         context.storage_state(path="auth/jobright_auth.json")
     
-def scrape(jobs_to_scrape, type):
+def scrape_jobright(jobs_to_scrape, type):
     if type == 'recommend':
         jobs_per_page = 10
     elif type == 'applied':
@@ -104,7 +104,7 @@ def scrape(jobs_to_scrape, type):
         context.close()
         browser.close() 
         
-        pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")   
+        return jobs
 
 if __name__ == '__main__':
-    scrape()
+    scrape_jobright()
