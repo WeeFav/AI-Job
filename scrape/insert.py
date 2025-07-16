@@ -22,7 +22,7 @@ def insert(job_csv_path):
     model_name = "BAAI/bge-base-en-v1.5"
 
     df = pd.read_csv(job_csv_path)
-    description_extracted_list = []
+    description_extracted_list = [] # for label studio annotation
 
     for i in range(len(df)):
         # extract description
