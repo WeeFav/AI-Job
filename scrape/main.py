@@ -4,7 +4,7 @@ import pandas as pd
 from linkedin import scrape_linkedin
 from jobright import scrape_jobright
 from insert import insert
-from label_studio_annotate import 
+from labelstudio_annotate import annotate
 
 def main(args):
     if args.job_site == 'LinkedIn':
@@ -17,7 +17,7 @@ def main(args):
     description_extracted_list = insert("./jobs.csv")
     
     if args.annotate:
-        
+        annotate(description_extracted_list)
        
     
 

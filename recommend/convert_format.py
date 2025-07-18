@@ -15,17 +15,24 @@ def labelstudio_to_spacy(raw_annotation_path):
         labels = []
         text = task["data"]["description_extracted"]
         annotations = task["annotations"][0]["result"]
+        window = -1
         for annotation in annotations:
             start = annotation["value"]["start"]
             end = annotation["value"]["end"]
             entity = annotation["value"]["labels"][0] # only 1 label per string
+
+            if start <= window:
+                print("Found overlap, skipping...")
+                continue
+            window = start
+            
             labels.append((start, end, entity))
         train_data.append((text, {"entities": labels}))
         
     return train_data
 
 def spacy_to_binary(train_data, binary_path):
-    nlp = spacy.blank("pt")
+    nlp = spacy.blank("en")
     db = DocBin()
     
     for text, annot in tqdm(train_data): 
