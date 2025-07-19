@@ -36,3 +36,5 @@ volumes:
   qdrant_data:
   postgres:
   pgadmin:
+
+# docker compose up qdrant postgres pgadmin -d

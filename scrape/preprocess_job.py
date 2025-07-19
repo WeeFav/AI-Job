@@ -30,10 +30,11 @@ def extract_description(description):
         try:
             ai_msg = llm.invoke(messages)
             description_extracted = ai_msg.content
-            break
+            return description_extracted
         except ResourceExhausted as e:
             print(f"Retrying in 60 seconds...")
             time.sleep(60)
+
 
 def canonicalize_url(url):
     """Canonicalizes a URL by sorting query parameters and optionally removing some."""

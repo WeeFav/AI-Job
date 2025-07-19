@@ -1,13 +1,14 @@
+from preprocess_job import extract_description, canonicalize_url
 import os
 import psycopg2
 import pandas as pd
 import hashlib
 from qdrant_client import QdrantClient, models
 import uuid
+import sys
 
-from preprocess_job import extract_description, canonicalize_url
 
-def insert(job_csv_path):
+def insert(job_csv_path, job_site):
     conn = psycopg2.connect(
         host=os.environ["POSTGRES_HOST"],
         user=os.environ["POSTGRES_USER"],
@@ -27,7 +28,10 @@ def insert(job_csv_path):
     for i in range(len(df)):
         # extract description
         description = df.iloc[i]['description']
-        description_extracted = extract_description(description)
+        if job_site == "LinkedIn":
+            description_extracted = extract_description(description)
+        else:
+            description_extracted = description
         description_extracted_list.append(description_extracted)
                
         # canonicalize url
@@ -38,7 +42,7 @@ def insert(job_csv_path):
         company_norm = df.iloc[i]['company'].strip().lower()
         combined = title_norm + company_norm + url_norm
         hash = hashlib.sha256(combined.encode('utf-8')).hexdigest()
-        
+                
         # insert into postgres
         cursor.execute("""
             INSERT INTO jobs (hash, title, company, url, description, description_extracted) 
@@ -54,7 +58,7 @@ def insert(job_csv_path):
         if cursor.rowcount == 0:
             print(f"[!] Duplicate hash detected: {hash}, nothing inserted.")
             exist = True
-        
+          
         # insert into qdrant
         if not exist:
             point = models.PointStruct(

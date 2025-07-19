@@ -22,20 +22,16 @@ def annotate(description_extracted_list):
     
     # Connect to the Label Studio
     ls = LabelStudio(base_url=LABEL_STUDIO_URL, api_key=os.environ['LABEL_STUDIO_API_KEY'])
-    project = ls.projects.get(id=1)
-    ls.import_tasks()
     
     # Load the custom model
     ner_model = "ner_model_50"
-    nlp = spacy.load(f"./recommend/{ner_model}")
+    nlp = spacy.load(f"../recommend/{ner_model}")
 
     preannotations = []
 
     # Process texts in batch using nlp.pipe()
     for doc in nlp.pipe(all_text_list, batch_size=16):  # Adjust batch_size as needed
-        preannotation = {"data": {}, "predictions": []}
-        preannotation["data"]["text"] = doc.text
-        prediction = {"model_version": ner_model}
+        preannotation = {"description_extracted": doc.text}
         
         results = []
         for ent in doc.ents:
@@ -54,13 +50,12 @@ def annotate(description_extracted_list):
             }
             results.append(result)
         
-        prediction["result"] = results
-        preannotation["predictions"].append(prediction)
+        preannotation["result"] = results
         preannotations.append(preannotation)
-
-    ls.predictions.create(result=preannotations)
+        
+    ls.projects.import_tasks(id=1, request=preannotations, preannotated_from_fields=["result"])
 
 if __name__ == '__main__':
-    df = pd.read_csv("./scrape/jobs.csv")
+    df = pd.read_csv("./jobs.csv")
     description_list = df["description"].to_list()
     annotate(description_list)

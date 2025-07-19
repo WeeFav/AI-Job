@@ -1,25 +1,27 @@
 import argparse
+import fastembed # needs to stay at top or else weird import error
 import pandas as pd
 
-from linkedin import scrape_linkedin
 from jobright import scrape_jobright
+from linkedin import scrape_linkedin
 from insert import insert
 from labelstudio_annotate import annotate
 
+
 def main(args):
-    if args.job_site == 'LinkedIn':
-        jobs = scrape_linkedin(args.num_jobs)
-    elif args.job_site == 'Jobright':
-        jobs = scrape_jobright(args.num_jobs, args.type)
+    # if args.job_site == 'LinkedIn':
+    #     jobs = scrape_linkedin(args.num_jobs)
+    # elif args.job_site == 'Jobright':
+    #     jobs = scrape_jobright(args.num_jobs, args.type)
     
-    pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")
+    # pd.DataFrame(jobs).to_csv("./jobs.csv", index=False, encoding="utf-8")
     
-    description_extracted_list = insert("./jobs.csv")
+    description_extracted_list = insert("./jobs.csv", args.job_site)
     
     if args.annotate:
         annotate(description_extracted_list)
+    pass
        
-    
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
