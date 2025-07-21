@@ -6,7 +6,8 @@ import hashlib
 from qdrant_client import QdrantClient, models
 import uuid
 import sys
-
+from dotenv import load_dotenv
+load_dotenv()
 
 def insert(job_csv_path, job_site):
     conn = psycopg2.connect(
@@ -48,6 +49,7 @@ def insert(job_csv_path, job_site):
             INSERT INTO jobs (hash, title, company, url, description, description_extracted) 
             VALUES (%s, %s, %s, %s, %s, %s)
             ON CONFLICT (hash) DO NOTHING
+            RETURNING timestamp
             """, 
             (hash, df.iloc[i]['title'], df.iloc[i]['company'], url_norm, description, description_extracted)
         )
@@ -58,6 +60,8 @@ def insert(job_csv_path, job_site):
         if cursor.rowcount == 0:
             print(f"[!] Duplicate hash detected: {hash}, nothing inserted.")
             exist = True
+        else:
+            timestamp = cursor.fetchone()[0]
           
         # insert into qdrant
         if not exist:
@@ -66,6 +70,7 @@ def insert(job_csv_path, job_site):
                 vector=models.Document(text=description_extracted, model=model_name),
                 payload={
                     "hash": hash,
+                    "timestamp": timestamp
                 }
             )
             

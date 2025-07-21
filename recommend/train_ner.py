@@ -6,7 +6,9 @@ from convert_format import labelstudio_to_spacy, spacy_to_binary
 
 
 def train():
-    train_data = labelstudio_to_spacy("./recommend/annotation1.json")
+    train_data = labelstudio_to_spacy("./annotation2.json")
+    print(len(train_data))
+    
     epochs = 50
 
     # Load a pretrained model
@@ -43,16 +45,16 @@ def train():
                 )
             print(losses["ner"])
 
-    nlp.to_disk("./recommend/ner_model_50")
+    nlp.to_disk("./ner_model_7_20-2")
     
 
 def test():
-    text = "Familiarity with data engineering concepts and tools (e.g., ETL processes, data warehousing)"
-    nlp = spacy.load("./recommend/ner_model_50")
+    text = "Design and implement workflows for managing the model lifecycle (training, versioning, deployment, and monitoring)."
+    nlp = spacy.load("./ner_model_7_20")
     doc = nlp(text)
     for ent in doc.ents:
         print(ent.text, ent.label_)
     
 if __name__ == '__main__':
-    # train()
+    train()
     # test()
