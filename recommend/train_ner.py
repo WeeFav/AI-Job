@@ -6,10 +6,10 @@ from convert_format import labelstudio_to_spacy, spacy_to_binary
 
 
 def train():
-    train_data = labelstudio_to_spacy("./annotation2.json")
+    train_data = labelstudio_to_spacy("./annotation.json")
     print(len(train_data))
     
-    epochs = 50
+    epochs = 100
 
     # Load a pretrained model
     nlp = spacy.load("en_core_web_sm")
@@ -23,7 +23,7 @@ def train():
     ner.add_label("GEN")
     ner.add_label("EDU")
     ner.add_label("MJR")
-
+    
     # Disable other components to avoid changing them
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe != "ner"]
     with nlp.disable_pipes(*other_pipes):
@@ -39,18 +39,18 @@ def train():
 
                 nlp.update(
                     [example],
-                    drop=0.2,
+                    drop=0.1,
                     sgd=optimizer,
                     losses=losses
                 )
             print(losses["ner"])
 
-    nlp.to_disk("./ner_model_7_20-2")
+    nlp.to_disk("./ner_model_7_24")
     
 
 def test():
-    text = "Design and implement workflows for managing the model lifecycle (training, versioning, deployment, and monitoring)."
-    nlp = spacy.load("./ner_model_7_20")
+    text = "Build and onboard strong, off-the-shelf machine learning and deep learning models, making them easy for all ML teams to use."
+    nlp = spacy.load("./ner_model_7_23")
     doc = nlp(text)
     for ent in doc.ents:
         print(ent.text, ent.label_)

@@ -1,0 +1,1172 @@
+### A
+- **AADD**
+   - [Active-Admin-Driven Development](dictionary/A/AADD-Active_Admin_Driven_Development.md)
+- **AC**
+   - [Acceptance Criteria](dictionary/A/AC-Acceptance_Criteria.md)
+- **ACID**
+   - [Atomicity, Consistency, Isolation, and Durability](dictionary/A/ACID-Atomicity_Consistency_Isolation_Durability.md)
+- **ACK / Ack**
+   - [Acknowledgement](dictionary/A/ACK-Acknowledgement.md)
+- **ACL**
+   - [Anti-Corruption Layer](dictionary/A/ACL-Anti_Corruption_Layer.md)
+   - [Access Control List](dictionary/A/ACL-Access_Control_List.md)
+- **AD**
+   - [Active Directory](dictionary/A/AD-Active_Directory.md)
+   - [Architectural Decision](dictionary/A/AD-Architectural_Decision.md)
+   - [Architectural Design](dictionary/A/AD-Architectural_Design.md)
+- **ADL**
+   - [Architecture Decision Log](dictionary/A/ADL-Architecture_Decision_Log.md)
+- **ADP**
+   - [Acyclic Dependencies Principle](dictionary/A/ADP-Acyclic_Dependencies_Principle.md)
+- **ADR**
+   - [Architectural Decision Records](dictionary/A/ADR-Architectural_Decision_Records.md)
+   - [Action–Domain–Responder](dictionary/A/ADR-Action_Domain_Responder.md)
+- **AES**
+   - [Advanced Encryption Standard](dictionary/A/AES-Advanced_Encryption_Standard.md)
+- **AFAICT**
+   - As Far As I Can Tell
+- **AFAIK**
+   - As Far As I Know
+- **AFK**
+   - Away From Keyboard
+- **AI**
+   - Artificial Intelligence
+- **AIOps**
+   - Artificial Intelligence for IT Operations
+- **AKA**
+   - As Known As
+- **AKM**
+   - Architectural Knowledge Management
+- **ALM**
+   - Application Lifecycle Management
+- **AML**
+   - Anti-Money Laundering
+- **AMQP**
+   - [Advanced Message Queuing Protocol](dictionary/A/AMQP-Advanced_Message_Queuing_Protocol.md)
+- **AOF**
+   - Append Only File
+- **AOP**
+   - Aspect-Oriented Programming
+   - Annual Operating Plan
+- **aPaaS**
+   - application Platform as a Service (Same with PaaS)
+- **API**
+   - [Application Programming Interface](dictionary/A/API-Application_Programming_Interface.md)
+- **APM**
+   - Application Performance Monitoring
+   - Agile Project Management
+   - Application Portfolio Management
+- **ASAP**
+   - As Soon As Possible
+- **ASCII**
+   - American Standard Code for Information Interchange
+- **ASD**
+   - [Adaptive Software Development](dictionary/A/ASD-Adaptive_Software_Development.md)
+- **ASP**
+   - [Application Service Provider](dictionary/A/ASP-Application_Service_Provider.md)
+- **ASR**
+   - Architecturally-Significant Requirement
+- **ATDD**
+   - [Acceptance Test-Driven Development](dictionary/A/ATDD-Acceptance_Test_Driven_Development.md)
+- **AUI**
+   - [Attentive User Interface](dictionary/A/AUI-Attentive_User_Interface.md)
+- **AUP**
+   - Agile Unified Process
+- **AWS**
+   - Amazon Web Services
+
+### B
+- **B**
+   - Byte
+- **b**
+   - bit
+- **BAN**
+   - [Body Area Network](dictionary/B/BAN-Body_Area_Network.md)
+- **BASE**
+   - [Basically Available, Soft state, Eventually consistent](dictionary/B/BASE-Basically_Available_Soft_State_Eventually_Consistent.md)
+- **BC**
+   - Business Continuity
+- **BCE**
+   - Boundary-Control-Entity (Same with ECB)
+- **BCP**
+   - Business Continuity Planning
+- **BDD**
+   - [Behavior-Driven Development](dictionary/B/BDD-Behavior_Driven_Development.md)
+- **BDUF**
+   - Big Design Up Front (principle)
+- **BFF**
+   - [Backend for Frontend](dictionary/B/BFF-Backend_For_Frontend.md)
+- **BgDD**
+   - [Bug-Driven Development](dictionary/B/BGDD-Bug_Driven_Development.md)
+- **BI**
+   - Business Intelligence
+- **BLOB / blob**
+   - [Binary Large OBject](dictionary/B/BLOB-Binary_Large_Object.md)
+- **bps**
+   - bits per second
+- **Bps**
+   - Bytes per second
+- **BRB**
+   - Be Right Back
+- **BSON**
+   - [Binary JSON](dictionary/B/BSON-Binary_JSON.md)
+- **BTW**
+   - By The Way
+- **B2B**
+   - Business to Business
+- **B2C**
+   - Business to Consumer
+- **B2E**
+   - Business to Employee
+
+### C
+- **CA**
+   - Certificate / Certification Authority
+- **CaaS**
+   - Container as a Service
+- **CAN**
+   - [Campus Area Network](dictionary/C/CAN-Campus_Area_Network.md)
+- **CAP theorem**
+   - Consistency, Availability and Partition tolerance
+- **CASE**
+   - Computer Aided Software Engineering
+- **CBD**
+   - Component-Based Development (Same with CBSE)
+- **CBSE**
+   - Component-Based Software Engineering
+- **CC**
+   - Carbon Copy
+- **CCP**
+   - Common-Closure Principle
+- **CD**
+   - Continuous Delivery
+   - Continuous Deployment
+- **CDA**
+   - Content Delivery Application
+- **CDC**
+   - Change Data Capture
+- **CDD**
+   - Configuration-Driven Development
+- **CDN**
+   - [Content Delivery Network](dictionary/C/CDN-Content_Delivery_Network.md)
+- **CDT**
+   - Central Daylight Time
+- **CEO**
+   - Chief Executive Officer
+- **CEP**
+   - Complex Event Processing
+- **CFD**
+   - [Control-Flow Diagram](dictionary/C/CFD-Control_Flow_Diagram.md)
+   - Cumulative Flow Diagram
+- **CFO**
+   - Chief Financial Officer
+- **CI**
+   - Continuous Integration
+- **CI/CD / CICD**
+   - Continuous Integration and Continuous Delivery / Deployment
+- **CL**
+   - [Change List / ChangeList](dictionary/C/CL-ChangeList.md)
+- **CLOB / clob**
+   - [Character Large OBject](dictionary/C/CLOB-Character_Large_Object.md)
+- **CLI**
+   - [Command-Line Interface](dictionary/C/CLI-Command_Line_Interface.md)
+- **CLT**
+   - Command-Line Tool
+- **CM**
+   - Content Management
+- **CMO**
+   - Chief Marketing Officer
+- **CMP**
+   - Certificate Management Protocol
+- **CMS**
+   - [Content Management System](dictionary/C/CMS-Content_Management_System.md)
+- **CO**
+   - Commitment Ordering
+- **COO**
+   - Chief Operating Officer / Chief Operation Officer
+- **CPS**
+   - Connections Per Second
+- **CPU**
+   - Central Processing Unit
+- **CQRS**
+   - Command and Query Responsibility Segregation
+- **CQS**
+   - Command-Query Separation (principle)
+- **CR**
+   - Code Review
+- **CRM**
+   - [Customer Relationship Management](dictionary/C/CRM-Customer_Relationship_Management.md)
+- **CRP**
+   - Common-Reuse Principle
+- **CRUD**
+   - [Create, Read, Update and Delete](dictionary/C/CRUD-Create_Read_Update_Delete.md)
+- **CSA**
+   - Cloud Security Alliance
+- **CSO**
+   - Chief Security Officer
+- **CSP**
+   - [Cloud Service Provider](dictionary/C/CSP-Cloud_Service_Provider.md)
+- **CSS**
+   - Cascading Style Sheets
+- **CST**
+   - Central Standard Time
+- **CSV**
+   - [Comma-Separated Values](dictionary/C/CSV-Comma_Separated_Values.md)
+- **CTDD**
+   - [Continuous Test-Driven Development](dictionary/C/CTDD-Continuous_Test_Driven_Development.md)
+- **CTO**
+   - Chief Technology Officer
+- **CUI**
+   - [Conversational User Interface](dictionary/C/CUI-Conversational_User_Interface.md)
+- **C2B**
+   - Consumer to Business
+- **C2C**
+   - Consumer to Consumer
+
+### D
+- **DaaS**
+   - [Data as a Service](dictionary/D/DaaS-Data_As_A_Service.md)
+   - [Desktop as a Service](dictionary/D/DaaS-Desktop_As_A_Service.md)
+- **DAD**
+   - [Disciplined Agile Delivery](dictionary/D/DAD-Disciplined_Agile_Delivery.md)
+- **DAL**
+   - [Data Access Layer](dictionary/D/DAL-Data_Access_Layer.md)
+- **DAO**
+   - [Data Access Object](dictionary/D/DAO-Data_Access_Object.md)
+- **DB**
+   - [Database](dictionary/D/DB-Database.md)
+- **DBA**
+   - [Database Administrator](dictionary/D/DBA-Database_Administrator.md)
+- **DBaaS**
+   - [Database as a Service](dictionary/D/DBaaS-Database_As_A_Service.md)
+- **DBMS**
+   - [Database Management System](dictionary/D/DBMS-Database_Management_System.md)
+- **DC**
+   - [Data Center](dictionary/D/DC-Data_Center.md)
+- **DCI**
+   - [Data Center Interconnect](dictionary/D/DCI-Data_Center_Interconnect.md)
+- **DCL**
+   - [Data Control Language](dictionary/D/DCL-Data_Control_Language.md)
+- **DCO**
+   - Data Center Outsourcing
+- **DD**
+   - Detailed Design
+- **DDD**
+   - [Domain-Driven Design](dictionary/D/DDD-Domain_Driven_Design.md)
+- **DDL**
+   - [Data Definition Language](dictionary/D/DDL-Data_Definition_Language.md)
+- **DDoS**
+   - Distributed Denial-of-Service (attack)
+- **DES**
+   - Data Encryption Standard
+- **DFD**
+   - Data Flow Diagram
+- **DHCP**
+   - [Dynamic Host Configuration Protocol](dictionary/D/DHCP-Dynamic_Host_Configuration_Protocol.md)
+- **DHT**
+   - Distributed Hash Table
+- **DLD**
+   - Detailed Level Design
+- **DLM**
+   - Distributed Lock Manager
+- **DLQ**
+   - Dead Letter Queue
+- **DM**
+   - Direct Message
+   - Dimensional Modeling
+- **DMCA**
+   - Digital Millennium Copyright Act
+- **DML**
+   - [Data Manipulation Language](dictionary/D/DML-Data_Manipulation_Language.md)
+- **DND**
+   - Do Not Disturb
+- **DNS**
+   - [Domain Name System](dictionary/D/DNS-Domain_Name_System.md)
+- **DOB**
+   - Date Of Birth
+- **DOCTYPE**
+   - DOCument TYPE declaration
+- **DOM**
+   - [Document Object Model](dictionary/D/DOM-Document_Object_Model.md)
+- **DORA**
+   - DevOps Research and Assessment
+- **DQL**
+   - [Data Query Language](dictionary/D/DQL-Database_Query_Language.md)
+- **DR**
+   - [Disaster Recovery](dictionary/D/DR-Disaster_Recovery.md)
+- **DRM**
+   - Digital Rights Management
+- **DRP**
+   - [Disaster Recovery Plan](dictionary/D/DRP-Disaster_Recovery_Plan.md)
+- **DRY**
+   - [Don't Repeat Yourself (principle)](dictionary/D/DRY-Dont_Repeat_Yourself.md)
+- **DSDL**
+   - Document Schema Definition Language
+- **DSDM**
+   - Dynamic Systems Development Method
+- **DSL**
+   - Domain-Specific Language
+- **DST**
+   - Daylight Saving Time
+- **DSV**
+   - [Delimiter-Separated Values](dictionary/D/DSV-Delimiter_Separated_Values.md)
+- **DTD**
+   - Document Type Definition
+- **DTSTTCPW**
+   - Do The Simplest Thing That Could Possibly Work (principle)
+- **DUT**
+   - [Device Under Test](dictionary/D/DUT-Device_Under_Test.md)
+- **DVCS**
+   - Distributed Version Control System
+- **DW**
+   - [Data Warehouse](dictionary/D/DW-Data_Warehouse.md)
+- **DWH**
+   - Data WareHouse (Same with DW)
+- **DWIM**
+   - [Do What I Mean (principle)](dictionary/D/DWIM-Do_What_I_Mean.md)
+- **D3**
+   - Design-Driven Development
+
+### E
+- **EAI**
+   - Enterprise Application Integration
+- **EB**
+   - Exabyte
+- **EBC**
+   - Entity-Boundary-Control (Same with ECB)
+- **EC**
+   - Eventual Consistency
+- **ECB**
+   - Entity-Control-Boundary
+- **ECM**
+   - Enterprise Content Management
+- **ECO**
+   - Extended Commitment Ordering
+- **ECRS**
+   - Expense and Cost Recovery System
+- **EDA**
+   - Event-Driven Architecture
+- **EDD**
+   - Example-Driven Development
+- **EDH**
+   - Enterprise Data Hub
+- **EDI**
+   - Electronic Data Interchange
+- **EDW**
+   - Enterprise Data Warehouse (Same with DW)
+- **ELK**
+   - Elasticsearch, Logstash, and Kibana (tech stack)
+- **ELT**
+   - [Extract, Load, and Transform](dictionary/E/ELT-Extract_Load_Transform.md)
+- **EM**
+   - Engineering Manager
+- **EMV**
+   - Europay, Mastercard and Visa
+- **EOD**
+   - End of Day
+- **EOF**
+   - End of File
+- **EOL**
+   - End of Line
+- **EOM**
+   - End of Month
+   - End of Message
+- **EOT**
+   - End of Transmission
+- **EOW**
+   - End of Week
+- **ER**
+   - Entity Relationship
+- **ERD**
+   - [Entity-Relationship Diagram](dictionary/E/ERD-Entity_Relationship_Diagram.md)
+   - Engineering Requirements Document
+- **ERP**
+   - [Enterprise Resource Planning](dictionary/E/ERP-Enterprise_Resource_Planning.md)
+- **ES**
+   - [Event Sourcing](dictionary/E/ES-Event_Sourcing.md)
+- **ESB**
+   - Enterprise Service Bus
+- **ESP**
+   - Event Stream Processing
+- **EST**
+   - Eastern Standard Time
+- **ETA**
+   - Estimated Time of Arrival
+- **ETL**
+   - [Extract, Transform, and Load](dictionary/E/ETL-Extract_Transform_Load.md)
+- **EUT**
+   - Equipment Under Test
+- **E2E**
+   - End-To-End 
+- **e.g.**
+   - for example
+
+### F
+- **FaaS**
+   - [Function as a Service](dictionary/F/FaaS-Function_As_A_Service.md)
+- **FACTA**
+   - Fair and Accurate Credit Transactions Act
+- **FAQ**
+   - Frequently Asked Questions
+- **FAT**
+   - File Allocation Table
+- **FDD**
+   - [Feature-Driven Development](dictionary/F/FDD-Feature_Driven_Development.md)
+- **FIFO**
+   - First In, First Out
+- **FK**
+   - [Foreign Key](dictionary/F/FK-Foreign_Key.md)
+- **FP**
+   - Functional Programming
+- **FSM**
+   - Finite-State Machine
+- **FTE**
+   - Full-Time Employee
+- **FTP**
+   - [File Transfer Protocol](dictionary/F/FTP-File_Transfer_Protocol.md)
+- **FWIW**
+   - For What It's Worth
+- **FYI**
+   - For Your Information
+
+### G
+- **GAN**
+   - Global Area Network
+- **GB**
+   - Gigabyte
+- **GBps**
+   - Gigabyte per second
+- **GC**
+   - [Garbage Collection](dictionary/G/GC-Garbage_Collection.md)
+- **GCP**
+   - Google Cloud Platform
+- **GFS**
+   - Google File System
+- **GIS**
+   - Geographic Information System
+- **GMS**
+   - Globalization Management System (Same with TMS)
+- **GMT**
+   - Greenwich Mean Time
+- **GNU**
+   - An extensive collection of free software
+- **GRASP**
+   - [General Responsibility Assignment Software Patterns](dictionary/G/GRASP-General_Responsibility_Assignment_Software_Patterns.md)
+- **GSM**
+   - Goals, Signals and Measures (framework)
+- **GUI**
+   - [Graphical User Interface](dictionary/G/GUI-Graphical_User_Interface.md)
+
+### H
+- **HAN**
+   - [Home Area Network](dictionary/H/HAN-Home_Area_Network.md)
+- **HDD**
+   - [Hard Disk Drive](dictionary/H/HDD-Hard_Disk_Drive.md)
+- **HDFS**
+   - [Hadoop Distributed File System](dictionary/H/HDFS-Hadoop_Distributed_File_System.md)
+- **Hex**
+   - Hexadecimal
+- **HIPAA**
+   - [Health Insurance Portability and Accountability Act](dictionary/H/HIPAA-Health_Insurance_Portability_Accountability_Act.md)
+- **HLD**
+   - High-Level Design
+- **HMAC**
+   - Hash-based Message Authentication Code
+- **HMVC**
+   - [Hierarchical Model–View–Controller](dictionary/H/HMVC-Hierarchical_Model_View_Controller.md)
+- **HOOD**
+   - Hierarchic Object-Oriented Design
+- **HPC**
+   - High-Performance Computing
+- **HR**
+   - Human Resources
+- **HRM**
+   - Human Resources Management
+- **HSM**
+   - Hardware Security Module
+- **HTML**
+   - HyperText Markup Language
+- **HTTP**
+   - Hypertext Transfer Protocol
+- **HTTPS**
+   - Hypertext Transfer Protocol Secure
+
+### I
+- **IaaS**
+   - [Infrastructure as a Service](dictionary/I/IaaS-Infrastructure_As_A_Service.md)
+- **IaC**
+   - Infrastructure as code
+- **IAM**
+   - Identity and Access Management
+- **IC**
+   - Individual Contributor
+- **ICN**
+   - Information-Centric Networking
+- **IDE**
+   - Integrated Development Environment
+- **IDL**
+   - Interface Definition Language
+- **IdM**
+   - Identity Management
+- **IEEE**
+   - Institute of Electrical and Electronic Engineers
+- **IETF**
+   - Internet Engineering Task Force
+- **IIRC**
+   - If I Recall/Remember Correctly
+- **IIUC**
+   - If I Understand Correctly
+- **IM**
+   - Instant Messaging
+- **IMAP**
+   - Internet Message Access Protocol
+- **IMO**
+   - In My Opinion
+- **IMHO**
+   - In My Honest/Humble Opinion
+- **IoT**
+   - Internet of Things
+- **IOW**
+   - In Other Words
+- **IP**
+   - Internet Protocol
+   - Intellectual Property
+- **IPC**
+   - Inter-Process Communication / InterProcess Communication
+- **IPv4**
+   - Internet Protocol version 4
+- **IPv6**
+   - Internet Protocol version 6
+- **ISO**
+   - International Organization for Standardization
+- **ISP**
+   - [Internet Service Provider](dictionary/I/ISP-Internet_Service_Provider.md)
+- **ISV**
+   - Independent Software Vendor
+- **IT**
+   - Information Technology
+- **ITSM**
+   - Information Technology Service Management
+- **i.e.**
+   - in other words
+
+### J
+- **JAD**
+   - Joint Application Design
+- **JDBC**
+   - Java Database Connectivity
+- **JDK**
+   - Java Development Kit
+- **JMS**
+   - Java Message Service
+- **JRE**
+   - Java Runtime Environment
+- **JS**
+   - JavaScript
+- **JSON**
+   - [JavaScript Object Notation](dictionary/J/JSON-JavaScript_Object_Notation.md)
+- **JVM**
+   - Java Virtual Machine
+
+### K
+- **KB**
+   - Kilobyte
+- **KBps**
+   - Kilobyte per second
+- **KISS**
+   - Keep It Simple, Stupid! (principle)
+- **KMS**
+   - Key Management Service
+- **KPI**
+   - Key Performance Indicator
+
+### L
+- **LAMP**
+   - Linux, Apache, MySQL, PHP/Perl/Python (tech stack)
+- **LAN**
+   - [Local Area Network](dictionary/L/LAN-Local_Area_Network.md)
+- **LB**
+   - [Load Balancer](dictionary/L/LB-Load_Balancer.md)
+- **LCME**
+   - Linux, Yaws, CouchDB, Erlang (tech stack)
+- **LDAP**
+   - Lightweight Directory Access Protocol
+- **LDF**
+   - Longest Distance First
+- **LEDES**
+   - Legal Electronic Data Exchange Standard
+- **LeSS**
+   - Large-Scale Scrum
+- **LGTM**
+   - Looks Good to Me
+- **LIFO**
+   - Last In, First Out
+- **LLD**
+   - Low-Level Design
+- **LMK**
+   - Let Me Know
+- **LMS**
+   - [Learning Management System](dictionary/L/LMS-Learning_Management_System.md)
+- **LRU**
+   - Least Recently Used
+- **LYME**
+   - Linux, Yaws, Mnesia, Erlang (tech stack)
+
+### M
+- **MAC**
+   - Message Authentication Code
+- **MAN**
+   - Metropolitan Area Network
+- **MB**
+   - Megabyte
+- **MBaaS**
+   - [Mobile Backend as a Service](dictionary/M/MBaaS-Mobile_Backend_As_A_Service.md)
+- **MBps**
+   - Megabyte per second
+- **MDM**
+   - Master Data Management
+- **MEAN**
+   - MongoDB, Express.js, AngularJS and Node.js (tech stack)
+- **MERN**
+   - MongoDB, Express.js, React and Node.js (tech stack)
+- **MEVN**
+   - MongoDB, Express.js, VueJS, Node.js (tech stack)
+- **MFA**
+   - Multi-Factor Authentication
+- **MFT**
+   - Managed File Transfer
+- **MIME**
+   - Multipurpose Internet Mail Extension
+- **MIS**
+   - Management Information System
+- **ML**
+   - Machine Learning
+- **MOM**
+   - Message-Oriented Middleware
+- **MPA**
+   - Multi-Party Authorization
+- **MQ**
+   - Message Queue
+- **MR**
+   - Merge Request
+- **MS**
+   - Microsoft
+- **MTBF**
+   - Mean Time Before Failure
+- **MTDC**
+   - Multi-Tenant Data Center
+- **MTTA**
+   - Mean Time To Acknowledge
+- **MTTF**
+   - Mean Time To Failure
+- **MTTR**
+   - Mean Time To Recovery
+   - Mean Time To Repair
+   - Mean Time To Respond
+   - Mean Time To Resolve
+- **MVA**
+   - Model–View–Adapter
+- **MVC**
+   - Model–View–Controller
+- **MVCC**
+   - Multi-Version Concurrency Control
+- **MVCO**
+   - Multi-Version Commitment Ordering
+- **MVD**
+   - Minimum Viable Documentation
+- **MVNO**
+   - Mobile Virtual Network Operator
+- **MVP**
+   - Model–View–Presenter
+   - Minimal Vaable Product
+- **MVVM**
+   - Model–View–View Model
+- **MWN**
+   - Municipal Wireless Network
+
+### N
+- **NaaS**
+   - [Network as a Service](dictionary/N/NaaS-Network_As_A_Service.md)
+- **NACK**
+   - Negative-Acknowledgement
+- **NAK**
+   - Negative-Acknowledgement (Same with NACK)
+- **NFU**
+   - Not Frequently Used
+- **NIS**
+   - Network Information Service
+- **NIT / nit**
+   - nit-pick / nitpicking / Nitpick
+- **NLP**
+   - Natural Language Processing
+- **NLU**
+   - Natural Language Understanding
+- **NTFS**
+   - New Technology File System
+
+### O
+- **OAuth**
+   - Open Authorization
+- **OCC**
+   - [Optimistic Concurrency Control (Optimistic locking)](dictionary/O/OCC-Optimistic_Concurrency_Control.md)
+- **OCO**
+   - Optimistic Commitment Ordering
+- **ODBC**
+   - Open Database Connectivity
+- **ODS**
+   - Operational Data Store
+- **OIDC**
+   - OpenID Connect
+- **OKR**
+   - Objectives and Key Results 
+- **OLAP**
+   - Online Analytical Processing
+- **OLEP**
+   - Online Event Processing
+- **OLTP**
+   - Online Transaction Processing
+- **OMT**
+   - Object-Modeling Technique
+- **OOA**
+   - Object-Oriented Analysis
+- **OOAD**
+   - Object-Oriented Analysis and Design
+- **OOD**
+   - Object-Oriented Design
+- **OOO**
+   - Out Of Office
+- **OOP**
+   - Object-Oriented Programming
+- **OOUI**
+   - [Object-Oriented User Interface](dictionary/O/OOUI-Object_Oriented_User_Interface.md)
+- **OpenUP**
+   - Open Unified Process
+- **ORB**
+   - Object Request Broker
+- **ORM**
+   - Object–Relational Mapping
+- **OS**
+   - Operating System
+- **OSI**
+   - Open Systems Interconnection (model)
+- **OSS**
+   - Open-Source Software
+   - Object Storage Service (Alibaba Cloud)
+- **OTAC**
+   - One-Time Authorization Code (Same with OTP)
+- **OTP**
+   - [One-Time Password](dictionary/O/OTP-One_Time_Password.md)
+
+### P
+- **PaaS**
+   - [Platform as a Service](dictionary/P/PaaS-Platform_As_A_Service.md)
+- **PAC**
+   - Presentation–Abstraction–Control
+- **PAN**
+   - [Personal Area Network](dictionary/P/PAN-Personal_Area_Network.md)
+- **PAT**
+   - Personal Access Token
+- **PB**
+   - Petabyte
+- **PBI**
+   - Product Backlog Item
+- **PC**
+   - Personal Computer
+- **PCC**
+   - [Pessimistic Concurrency Control (Pessimistic locking)](dictionary/P/PCC-Pessimistic_Concurrency_Control.md)
+- **PCI**
+   - Payment Card Industry
+- **PCI-DSS**
+   - Payment Card Industry Data Security Standard
+- **PEP**
+   - Python Enhancement Proposals
+- **PIC**
+   - Personal In Charge
+- **PIN**
+   - Personal Identification Number
+- **PK**
+   - [Primary Key](dictionary/P/PK-Primary_Key.md)
+- **PKI**
+   - Public Key Infrastructure
+- **PM**
+   - Project Manager
+   - Product Manager
+- **POC / PoC**
+   - Proof of Concept
+   - Point of Contact
+- **POJO**
+   - Plain Old Java Object
+- **POLA**
+   - Principle Of Least Astonishment
+- **POR**
+   - Plan Of Record
+- **POV / PoV**
+   - Proof of Value
+- **PR**
+   - Pull Request (Same with CL)
+- **PRD**
+   - Product Requirements Document
+- **Protobuf**
+   - Protocol Buffers
+- **PSP**
+   - [Payment Service Provider](dictionary/P/PSP-Payment_Service_Provider.md)
+- **PST**
+   - Pacific Standard Time
+- **PTAL**
+   - Please Take A Look
+- **PTE**
+   - Part-Time Employee
+- **PTO**
+   - Paid Time Off
+- **PuTTY**
+   - A free and open-source terminal emulator, serial console and network file transfer application
+- **P2P**
+   - Peer-to-Peer
+
+### Q
+- **QA**
+   - Quality Assurance
+- **Q&A**
+   - Question-and-Answer
+- **QBR**
+   - Quarterly Business Review
+- **QC**
+   - Quality Control
+- **QE**
+   - Quality Engineer
+- **QPS**
+   - Queries Per Second
+- **QTR**
+   - Quarterly Tech Review
+
+### R
+- **RA**
+   - Registration Authority
+- **RAB**
+   - Rapid Application Building (Same with RAD)
+- **RAD**
+   - [Rapid Application Development](dictionary/R/RAD-Rapid_Application_Development.md)
+- **RAID**
+   - Redundant Array of Inexpensive Disks / Redundant Array of Independent Disks
+- **RAM**
+   - Random Access Memory
+- **RAN**
+   - Religious Area Network
+- **RCA**
+   - Root Cause Analysis
+- **RDBMS**
+   - [Relational Database Management System](dictionary/R/RDBMS-Relational_Database_Management_System.md)
+- **RDUF**
+   - Rough Design Up Front (principle)
+- **RE**
+   - Release Engineering
+- **regex / regexp**
+   - Regular Expression
+- **REP**
+   - Reuse-release Equivalence Principle
+- **RERO**
+   - [Release Early, Release Often (principle)](dictionary/R/RERO-Release_Early_Release_Often.md)
+- **REST**
+   - Representational State Transfer
+- **RFC**
+   - Remote Function Call
+   - [Request For Comments](dictionary/R/RFC-Request_For_Comments.md)
+- **ROM**
+   - Read Only Memory
+- **RPC**
+   - Remote Procedure Call
+- **RPO**
+   - Recovery Point Objective
+- **RPS**
+   - Requests Per Second
+- **RSA**
+   - Rivest–Shamir–Adleman
+- **RT**
+   - Response Time
+- **RTO**
+   - Recovery Time Objective
+- **RUP**
+   - Rational Unified Process
+- **R&D**
+   - Research and Development
+
+### S
+- **SaaS**
+   - [Software as a Service](dictionary/S/SaaS-Software_As_A_Service.md)
+- **SAFe**
+   - Scaled Agile Framework
+- **SAML**
+   - Security Assertion Markup Language
+- **SAN**
+   - [Storage Area Network](dictionary/S/SAN-Storage_Area_Network.md)
+- **SAP**
+   - Stable-Abstractions Principle
+- **SASE**
+   - Secure Access Service Edge
+- **SBA**
+   - Space-Based Architecture
+- **SBE**
+   - Specification By Example 
+- **SCA**
+   - Service Component Architecture
+- **SCM**
+   - Software Configuration Management
+   - Supply Chain Management
+- **SCO**
+   - Strict Commitment Ordering
+- **SDD**
+   - Story-Driven Development
+- **SDK**
+   - Software Development Kits
+- **SDLC**
+   - Systems Development Life Cycle
+- **SDN**
+   - Software-Defined Networking
+- **SD-WAN**
+   - Software-Defined WAN
+- **SDO**
+   - Service Data Object
+- **SDP**
+   - Stable-Dependencies Principle
+- **SECaaS**
+   - Security as a Service
+- **SEO**
+   - [Search Engine Optimization](dictionary/S/SEO-Search_Engine_Optimization.md)
+- **SFTP**
+   - SSH File Transfer Protocol
+   - Secure File Transfer Protocol
+- **SGML**
+   - Standard Generalized Markup Language
+- **SLA**
+   - [Service Level Agreement](dictionary/S/SLA-Service_Level_Agreement.md)
+- **SLI**
+   - [Service Level Indicator](dictionary/S/SLI-Service_Level_Indicator.md)
+- **SLO**
+   - [Service Level Objective](dictionary/S/SLO-Service_Level_Objective.md)
+- **SMART**
+   - Specific, Measurable, Achievable, Relevant, Time-bound (goal setting framework)
+- **SMS**
+   - Short Message Service
+- **SMTP**
+   - Simple Mail Transfer Protocol
+- **SN**
+   - Shared-Nothing (architecture)
+   - Serial Number
+- **SOA**
+   - Service-Oriented Architecture
+- **SOAP**
+   - Simple Object Access Protocol
+- **SOLID**
+   - Single-responsibility principle, Open–closed principle, Liskov substitution principle, Interface segregation principle, Dependency inversion principle
+- **SOP**
+   - Standard Operating Procedure
+- **SPOF**
+   - Single Point Of Failure
+- **SPOT**
+   - Single Point Of Truth (Same with SSOT)
+- **SQA**
+   - Software Quality Assurance
+- **SQL**
+   - [Structured Query Language](dictionary/S/SQL-Structured_Query_Language.md)
+- **SRE**
+   - Site Reliability Engineering
+- **SRLC**
+   - Software Release Life Cycle
+- **SSADM**
+   - Structured Systems Analysis and Design Method
+- **SSD**
+   - Solid-State Drive
+   - [System Sequence Diagram](dictionary/S/SSD-System_Sequence_Diagram.md)
+- **SSH**
+   - Secure Shell (Protocol)
+- **SSL**
+   - Secure Sockets Layer
+- **SSO**
+   - Single Sign-On
+- **SSOT**
+   - [Single Source Of Truth](dictionary/S/SSOT-Single_Source_Of_Truth.md)
+- **SSP**
+   - Solution Security Plan    
+- **SS2PL**
+   - Strong Strict 2-Phase Locking
+- **SUT**
+   - System Under Test
+- **SVOT**
+   - [Single Version Of Truth](dictionary/S/SVOT-Single_Version_Of_Truth.md)
+- **SWE**
+   - SoftWare Engineer
+- **S2PL**
+   - Strict 2-Phase Locking
+
+### T
+- **TB**
+   - Terabyte
+- **TBA**
+   - To Be Announced
+- **TBD**
+   - To Be Done/Decided/Determined
+- **TBH**
+   - To Be Honest
+- **TBR**
+   - To Be Reviewed
+- **TBps**
+   - Terabyte per second
+- **TC**
+   - Technical Candidate
+- **TCC**
+   - Try-Confirm/Cancel
+- **TCO**
+   - Total Cost of Ownership
+- **TCP**
+   - Transmission Control Protocol
+- **TD**
+   - Technical Documentation
+- **TDD**
+   - [Test-Driven Development](dictionary/T/TDD-Test_Driven_Development.md)
+- **TDS**
+   - Transaction Data Store
+- **TE**
+   - Test Engineer
+- **TL**
+   - Tech Lead
+- **TLM**
+   - Tech Lead Manager
+- **TLS**
+   - Transport Layer Security
+- **TLDR / TL;DR**
+   - Too Long, Didn't Read
+- **TMS**
+   - [Translation Management System](dictionary/T/TMS-Translation_Management_System.md)
+- **TMTOWTDI**
+   - There's More Than One Way To Do It (principle)
+- **TPM**
+   - Technical Program Manager
+   - Technological Protection Measure
+- **TO**
+   - [Timestamp Ordering](dictionary/T/TO-Timestamp_Ordering.md)
+- **TOC**
+   - Table Of Contents
+- **TOT**
+   - Top Of Tree (The newest code in the code base)
+- **TOTP**
+   - [Time-based One-Time Password](dictionary/T/TOTP-Time_Based_One_Time_Password.md)
+- **TPA**
+   - Third-Party Authenticator
+- **TPS**
+   - Transactions Per Second
+- **TSV**
+   - [Tab-Separated Values](dictionary/T/TSV-Tab_Separated_Values.md)
+- **TTL**
+   - Time To Live
+- **TTP**
+   - Trusted Third Party
+- **TUI**
+   - [Tangible User Interface](dictionary/T/TUI-Tangible_User_Interface.md)
+
+### U
+- **UAP**
+   - Uniform Access Principle
+- **UAT**
+   - User Acceptance Testing
+- **UCaaS**
+   - Unified Communication as a Service
+- **UCD**
+   - User-Centered Design
+- **UDD**
+   - User-Driven Development (Same with UCD)
+- **UDDI**
+   - Universal Description, Discovery and Integration
+- **UDP**
+   - User Datagram Protocol
+- **UI**
+   - [User Interface](dictionary/U/UI-User_Interface.md)
+- **UML**
+   - Unified Modeling Language
+- **URI**
+   - Uniform Resource Identifier
+- **URL**
+   - [Uniform Resource Locator](dictionary/U/URL-Uniform_Resource_Locator.md)
+- **USD**
+   - Unified Software Development
+- **UTC**
+   - Coordinated Universal Time
+- **UTF-8**
+   - Unicode  Transformation Format - 8-bit
+- **UUT**
+   - Unit Under Test
+- **UX**
+   - User Experience
+
+### V
+- **VA**
+   - Validation Authority
+- **VDD**
+   - Value-Driven Design
+- **VDM**
+   - Virtual Database Manager
+- **VLAN**
+   - [Virtual LAN (Local Area Network)](dictionary/V/VLAN-Virtual_LAN.md)
+- **VPN**
+   - [Virtual Private Network](dictionary/V/VPN-Virtual_Private_Network.md)
+- **VS**
+   - Visual Studio
+- **V&V**
+   - Verification and Validation
+
+### W
+- **WAL**
+   - Write-Ahead Logging (PostgreSQL)
+- **WAN**
+   - [Wide Area Network](dictionary/W/WAN-Wide_Area_Network.md)
+- **WBAN**
+   - Wireless BAN (Same with BAN)
+- **WCM**
+   - Web Content Management
+- **WFH**
+   - Work From Home
+- **WIP**
+   - Work In Progress
+- **WLAN**
+   - [Wireless LAN (Local Area Network)](dictionary/W/WLAN-Wireless_LAN.md)
+- **WS**
+   - Web Service
+- **WSDL**
+   - Web Service Description Language
+- **W3C**
+   - World Wide Web Consortium
+
+### X
+- **XML**
+   - [Extensible Markup Language](dictionary/X/XML-Extensible_Markup_Language.md)
+- **XP**
+   - Extreme Programming
+- **XSD**
+   - XML Schema Definition
+
+### Y
+- **YAGNI**
+   - [You Aren't Gonna Need It (principle)](dictionary/Y/YAGNI-You_Arent_Gonna_Need_It.md)
+- **YAML**
+   - YAML Ain’t Markup Language (Recursive acronym)
+- **YARN**
+   - Yet Another Resource Negotiator
+- **YB**
+   - Yottabyte
+
+### Z
+- **ZB**
+   - Zettabyte
+- **ZTN**
+   - [Zero Trust Network](dictionary/Z/ZTN-Zero_Trust_Network.md)
+
+### 2
+- **2FA**
+   - Two-Factor Authentication (Same with MFA)
+- **2PC**
+   - [Two-Phase Commit](dictionary/2/2PC-Two_Phase_Commit.md)
+- **2PL**
+   - [Two-Phase Locking](dictionary/2/2PL-Two_Phase_Locking.md)
+
+### 3
+- **3PC**
+   - [Three-Phase Commit](dictionary/3/3PC-Three_Phase_Commit.md)

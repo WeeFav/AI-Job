@@ -11,7 +11,7 @@ services:
 
   # postgres
   postgres:
-    image: postgres:13
+    image: pgvector/pgvector:pg13
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
