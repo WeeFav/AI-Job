@@ -2,34 +2,40 @@ import json
 from spacy.tokens import DocBin
 from tqdm import tqdm
 import spacy
+import random
 
 def labelstudio_to_spacy(raw_annotation_path):
     with open(raw_annotation_path, "r", encoding="utf-8") as f:
         raw = json.load(f)
         
-    train_data = []
+    annotated_data = []
+    empty_data = []
     for task in raw:
-        if task["annotations"][0]["was_cancelled"] or len(task["annotations"][0]["result"]) == 0:
-            continue
-        
-        labels = []
-        text = task["data"]["description_extracted"]
-        annotations = task["annotations"][0]["result"]
-        window = -1
-        for annotation in annotations:
-            start = annotation["value"]["start"]
-            end = annotation["value"]["end"]
-            entity = annotation["value"]["labels"][0] # only 1 label per string
+        if len(task["annotations"][0]["result"]) > 0:
+            labels = []
+            text = task["data"]["description_extracted"]
+            annotations = task["annotations"][0]["result"]
+            window = -1
+            for annotation in annotations:
+                start = annotation["value"]["start"]
+                end = annotation["value"]["end"]
+                entity = annotation["value"]["labels"][0] # only 1 label per string
 
-            if start <= window:
-                print("Found overlap, skipping...")
-                continue
-            window = start
-            
-            labels.append((start, end, entity))
-        train_data.append((text, {"entities": labels}))
+                if start <= window:
+                    print("Found overlap, skipping...")
+                    continue
+                window = start
+                
+                labels.append((start, end, entity))
+            annotated_data.append((text, {"entities": labels}))
+        elif task["annotations"][0]["was_cancelled"]:
+            text = task["data"]["description_extracted"]
+            empty_data.append((text, {"entities": []}))
+    
+    selected_empty = random.sample(empty_data, 300)
+    annotated_data.extend(selected_empty)
         
-    return train_data
+    return annotated_data
 
 def spacy_to_binary(train_data, binary_path):
     nlp = spacy.blank("en")

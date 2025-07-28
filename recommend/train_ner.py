@@ -4,14 +4,13 @@ from spacy.training.example import Example
 
 from convert_format import labelstudio_to_spacy, spacy_to_binary
 
-
 def train():
     train_data = labelstudio_to_spacy("./annotation.json")
     print(len(train_data))
     
-    epochs = 100
+    epochs = 80
 
-    # Load a pretrained model
+    # Load pretrained model
     nlp = spacy.load("en_core_web_sm")
 
     # Remove the existing NER
@@ -45,7 +44,7 @@ def train():
                 )
             print(losses["ner"])
 
-    nlp.to_disk("./ner_model_7_24")
+    nlp.to_disk("./ner_models/7_28")
     
 
 def test():

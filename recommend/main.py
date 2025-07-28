@@ -78,7 +78,7 @@ def extract_skills(description_extracted):
     
     return educations, majors, skills
 
-def embedd_skills(skills: dict):
+def embed_skills(skills: dict):
     # Separate skills and weights
     skills = list(skills.keys())
     weights = np.array([skills[skill] for skill in skills])
@@ -120,12 +120,21 @@ def keyword_scoring(job_hash):
 
         description_extracted = result["description_extracted"]
         educations, majors, skills = extract_skills(description_extracted)
-        weighted_embedding = embedd_skills(skills)
+        embedding = embed_skills(skills)
+        pgvector_str = "[" + ",".join(map(str, embedding.tolist())) + "]"
         
         # save to postgres
+        cursor.execute("""
+            INSERT INTO skills (job_hash, skills, educations, majors, embedding)
+            VALUES (%s, %s, %s, %s, %s)
+            """,
+            (job_hash, json.dumps(skills), list(educations), list(majors), pgvector_str)
+        )
+        conn.commit()    
         
     
     # Normalized match
+    
 
     # Fuzzy match
 
