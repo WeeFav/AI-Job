@@ -13,9 +13,12 @@ CREATE TABLE skills (
     skills JSONB,
     educations TEXT[],
     majors TEXT[],
-    embedding vector(384),
     FOREIGN KEY (job_hash) REFERENCES jobs(hash)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
 
+CREATE TABLE embeddings (
+    skill TEXT PRIMARY KEY,
+    embedding VECTOR(384)
+);
