@@ -1,2 +1,3 @@
 annotation.json
 ner_model*
+.env

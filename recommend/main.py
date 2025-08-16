@@ -14,6 +14,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import json
 from sentence_transformers import SentenceTransformer
+from sentence_transformers.util import cos_sim
 import numpy as np
 from dotenv import load_dotenv
 load_dotenv()
@@ -31,12 +32,12 @@ conn = psycopg2.connect(
     )
 cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-ner_model = "./ner_model_7_23"
+ner_model = "ner_models/7_28"
 stop_words = set(stopwords.words("english"))
 
-with open("./skills_abbreviations.json", "r", encoding="utf-8") as f:
+with open("skills_abbreviations.json", "r", encoding="utf-8") as f:
     skills_abbreviations = json.load(f)
-with open("./education_abbreviations.json", "r", encoding="utf-8") as f:
+with open("education_abbreviations.json", "r", encoding="utf-8") as f:
     education_abbreviations = json.load(f)
     
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -81,7 +82,7 @@ def extract_keyword(description_extracted):
             text = normalize(ent.text, skills_abbreviations)
             skills[text] += 1
     
-    return educations, majors, skills
+    return educations, majors, skills, doc
 
 def embed_skills(skills: dict) -> dict:
     skills_list = list(skills.keys())
@@ -151,30 +152,29 @@ def adjusted_jaccard(resume, jd):
     return numerator / denominator if denominator else 0
 
 
-def compute_skill_embeddings_similarity(r_embeddings: dict, j_embeddings: dict):
-    similarity_matrix = {}
-    for jk, j_emb in job_embs.items():
-        similarity_matrix[jk] = {}
-        for rk, r_emb in resume_embs.items():
-            similarity_matrix[jk][rk] = cosine_sim(j_emb, r_emb)   
-
-
-    total_weight = sum(job_freq.values())  # Normalization factor
+def compute_skill_embeddings_similarity(r_embeddings: dict, j_embeddings: dict, r_skills: dict, j_skills: dict):
+    j_skills_list = list(j_embeddings.keys())
+    r_skills_list = list(r_embeddings.keys())
+    
+    similarity_matrix = cos_sim([j_embeddings[skill] for skill in j_skills_list], [r_embeddings[skill] for skill in r_skills_list])
+    
+    total_weight = sum(j_skills.values())  # Normalization factor
     score_sum = 0
 
-    for jk in job_freq:
+    for j, j_skill in enumerate(j_skills_list):
         # Best matching resume keyword
         best_match_score = 0
-        for rk in resume_freq:
-            sim = similarity_matrix[jk][rk]
-            weighted_sim = sim * min(resume_freq[rk], job_freq[jk])
-            best_match_score = max(best_match_score, weighted_sim)
-        
+        for r, r_skill in enumerate(r_skills_list):
+            sim = similarity_matrix[j][r]
+            weighted_sim = sim * min(j_skills[j_skill], r_skills[r_skill]) # weighted by overlap frequency
+            best_match_score = max(best_match_score, weighted_sim) # keep best match score
+            
         # Weight by job keyword importance
-        score_sum += best_match_score * job_freq[jk]
+        score_sum += best_match_score * j_skills[j_skill]
 
     final_score = score_sum / total_weight
-    print("Weighted embedding similarity score:", final_score)             
+    return final_score             
+    
     
 def keyword_scoring(job_hash, r_educations, r_majors, r_skills, r_embeddings):
     cursor.execute("""
@@ -215,12 +215,24 @@ def keyword_scoring(job_hash, r_educations, r_majors, r_skills, r_embeddings):
     # Normalized match
     cosine_score = cosine_similarity_freq(r_skills, j_skills)
     jaccard_score = adjusted_jaccard(r_skills, j_skills)
-    final_score = (w_cosine * cosine_score) + (w_jaccard * jaccard_score)    
+    freq_score = (0.5 * cosine_score) + (0.5 * jaccard_score)    
 
     # Embedding similarity (pairwise similarity matrix using sentence_transformers.util.cos_sim)
-    compute_skill_embeddings_similarity(r_embeddings, j_embeddings)
+    embed_score = compute_skill_embeddings_similarity(r_embeddings, j_embeddings, r_skills, j_skills)
     
-    return freq_score, fuzz_score, embed_score
+    # education match
+    if len(j_educations) > 0 and len(j_educations.intersection(r_educations)) == 0:
+        edu_score = 0
+    else:
+        edu_score = 1
+        
+    # major match
+    if len(j_majors) > 0 and len(j_majors.intersection(r_majors)) == 0:
+        major_score = 0
+    else:
+        major_score = 1
+    
+    return freq_score, embed_score, edu_score, major_score
 
 def main(args):
     # --- 1. Resume ---
@@ -269,14 +281,15 @@ def main(args):
     for point in results:
         # Layered NER scoring
         job_hash = point.payload['hash']
-        freq_score, fuzz_score, embed_score = keyword_scoring(job_hash, r_educations, r_majors, r_skills, r_embeddings)
-        scores[job_hash] = [point.score, freq_score, fuzz_score, embed_score] # [description embedding score, keyword frequency score, fuzzy match score, keyword embedding score]
+        freq_score, embed_score, edu_score, major_score = keyword_scoring(job_hash, r_educations, r_majors, r_skills, r_embeddings)
+        # final score from [description embedding score, keyword frequency score, keyword embedding score, education match score, major match score]
+        score = (0.4 * point.score) + (0.2 * freq_score) + (0.3 * embed_score) + (0.05 * edu_score) + (0.05 * major_score) 
+        scores[job_hash] = score
     
+    ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)    
     
-    
-    
-    
-    
+    print(ranked)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
